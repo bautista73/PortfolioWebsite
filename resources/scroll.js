@@ -1,8 +1,3 @@
-function toggle() {
-    var element = document.body;
-    element.classList.toggle("dark");
-}
-
 var bar = document.getElementsByClassName('btn-scroll_bar_content')
 
 var tween = TweenMax.to(bar, 0.85, {

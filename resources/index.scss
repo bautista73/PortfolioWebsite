@@ -1,7 +1,7 @@
 :root {
-    --dark-mode: #293241;
+    --dark-mode: #1d1d1d;
     --light-mode: #e5e5e5;
-    --color-white: #fff;
+    --text-light: #f8f8f8;
     --color-light-purple: #cf59e6;
     --color-light-blue: #6bc5f8;
 }
@@ -10,28 +10,33 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: var(--light-mode);
+}
+
+body {
+    background-color: var(--dark-mode);
+    color: var(--light-mode);
 }
 
 /* Navigation */
 .nav-container {
+    position: relative;
+    z-index: -1;
     margin: auto;
     width: 94%;
-    height: 6rem;
+    height: 5.5rem;
     display: flex;
     justify-content: space-between;
 }
 
 .nav-container a {
     text-decoration: none;
-    color: black;
 }
 
 .nav-name{
-    font-family: poppins, sans-serif;
-    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
     margin: auto 0 auto 2rem;
-    font-size: 22px;
+    font-size: 20px;
 }
 .nav-menu {
     width: 30rem;
@@ -39,9 +44,9 @@
     justify-content: space-around;
     align-items: center;
     list-style: none;
-    font-family: "inter", poppins, sans-serif;
-    font-weight: 500;
-    font-size: 16px;
+    font-family: "inter", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
 }
 
 .nav-menu label {
@@ -85,6 +90,18 @@ label:active::after{
     width: 26px;
 }
 
+.side-bar-containter {
+    position: static;
+    top: 0;
+    left: 0;
+}
+.side-bar-contents {
+    width: 6rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #103ae0;
+}
 
 /* Main */
 
@@ -92,7 +109,24 @@ label:active::after{
 #jumbotron {
     width: 100%;
     height: 90vh;
-    display: flex;
-    align-items: center;
 }
 
+.intro-block {
+    margin: auto;
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.intro-title {
+    font-family: 'Syne', sans-serif;
+    font-size: 1.9rem;
+}
+.intro-fill {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.05rem;
+    font-weight: 300;
+    width: 28vw;
+}
