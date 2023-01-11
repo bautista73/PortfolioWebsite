@@ -1,0 +1,239 @@
+  #scroll-down {
+    display: block;
+    position: relative;
+    padding-top: 79px;
+    text-align:center;
+  }
+  
+  #scroll-title {
+    display: block;
+    text-transform: uppercase;
+    color: #cbcbcb;
+    font-family: -apple-system,'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size:14px;
+    font-weight: 300;
+    text-align:center;
+    margin-bottom: 45px;
+  }
+  #scroll-down::before {
+      -webkit-animation: elastic 2.9s cubic-bezier(1, 0, 0, 1) infinite;
+      /* Safari 4+ */
+      
+      -moz-animation: elastic 2.9s cubic-bezier(1, 0, 0, 1) infinite;
+      /* Fx 5+ */
+      
+      -o-animation: elastic 2.9s cubic-bezier(1, 0, 0, 1) infinite;
+      /* Opera 12+ */
+      
+      animation: elastic 2.9s cubic-bezier(1, 0, 0, 1) infinite;
+      /* IE 10+, Fx 29+ */
+      
+      position: absolute;
+      top: 0px;
+      left: 50%;
+      margin-left: -1px;
+      width: 2px;
+      height: 90px;
+      background: #cbcbcb;
+      content: ' ';
+  }
+  @-webkit-keyframes elastic {
+      0% {
+          -webkit-transform-origin: 0% 0%;
+          -ms-transform-origin: 0% 0%;
+          -moz-transform-origin: 0% 0%;
+          -o-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+          -webkit-transform: scale(1, 0);
+          -ms-transform: scale(1, 0);
+          -moz-transform: scale(1, 0);
+          -o-transform: scale(1, 0);
+          transform: scale(1, 0);
+      }
+      50% {
+          -webkit-transform-origin: 0% 0%;
+          -ms-transform-origin: 0% 0%;
+          -moz-transform-origin: 0% 0%;
+          -o-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+          -webkit-transform: scale(1, 1);
+          -ms-transform: scale(1, 1);
+          -moz-transform: scale(1, 1);
+          -o-transform: scale(1, 1);
+          transform: scale(1, 1);
+      }
+      50.1% {
+          -webkit-transform-origin: 0% 100%;
+          -ms-transform-origin: 0% 100%;
+          -moz-transform-origin: 0% 100%;
+          -o-transform-origin: 0% 100%;
+          transform-origin: 0% 100%;
+          -webkit-transform: scale(1, 1);
+          -ms-transform: scale(1, 1);
+          -moz-transform: scale(1, 1);
+          -o-transform: scale(1, 1);
+          transform: scale(1, 1);
+      }
+      100% {
+          -webkit-transform-origin: 0% 100%;
+          -ms-transform-origin: 0% 100%;
+          -moz-transform-origin: 0% 100%;
+          -o-transform-origin: 0% 100%;
+          transform-origin: 0% 100%;
+          -webkit-transform: scale(1, 0);
+          -ms-transform: scale(1, 0);
+          -moz-transform: scale(1, 0);
+          -o-transform: scale(1, 0);
+          transform: scale(1, 0);
+      }
+  }
+  @-moz-keyframes elastic {
+      0% {
+          -webkit-transform-origin: 0% 0%;
+          -ms-transform-origin: 0% 0%;
+          -moz-transform-origin: 0% 0%;
+          -o-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+          -webkit-transform: scale(1, 0);
+          -ms-transform: scale(1, 0);
+          -moz-transform: scale(1, 0);
+          -o-transform: scale(1, 0);
+          transform: scale(1, 0);
+      }
+      50% {
+          -webkit-transform-origin: 0% 0%;
+          -ms-transform-origin: 0% 0%;
+          -moz-transform-origin: 0% 0%;
+          -o-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+          -webkit-transform: scale(1, 1);
+          -ms-transform: scale(1, 1);
+          -moz-transform: scale(1, 1);
+          -o-transform: scale(1, 1);
+          transform: scale(1, 1);
+      }
+      50.1% {
+          -webkit-transform-origin: 0% 100%;
+          -ms-transform-origin: 0% 100%;
+          -moz-transform-origin: 0% 100%;
+          -o-transform-origin: 0% 100%;
+          transform-origin: 0% 100%;
+          -webkit-transform: scale(1, 1);
+          -ms-transform: scale(1, 1);
+          -moz-transform: scale(1, 1);
+          -o-transform: scale(1, 1);
+          transform: scale(1, 1);
+      }
+      100% {
+          -webkit-transform-origin: 0% 100%;
+          -ms-transform-origin: 0% 100%;
+          -moz-transform-origin: 0% 100%;
+          -o-transform-origin: 0% 100%;
+          transform-origin: 0% 100%;
+          -webkit-transform: scale(1, 0);
+          -ms-transform: scale(1, 0);
+          -moz-transform: scale(1, 0);
+          -o-transform: scale(1, 0);
+          transform: scale(1, 0);
+      }
+  }
+  @-o-keyframes elastic {
+      0% {
+          -webkit-transform-origin: 0% 0%;
+          -ms-transform-origin: 0% 0%;
+          -moz-transform-origin: 0% 0%;
+          -o-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+          -webkit-transform: scale(1, 0);
+          -ms-transform: scale(1, 0);
+          -moz-transform: scale(1, 0);
+          -o-transform: scale(1, 0);
+          transform: scale(1, 0);
+      }
+      50% {
+          -webkit-transform-origin: 0% 0%;
+          -ms-transform-origin: 0% 0%;
+          -moz-transform-origin: 0% 0%;
+          -o-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+          -webkit-transform: scale(1, 1);
+          -ms-transform: scale(1, 1);
+          -moz-transform: scale(1, 1);
+          -o-transform: scale(1, 1);
+          transform: scale(1, 1);
+      }
+      50.1% {
+          -webkit-transform-origin: 0% 100%;
+          -ms-transform-origin: 0% 100%;
+          -moz-transform-origin: 0% 100%;
+          -o-transform-origin: 0% 100%;
+          transform-origin: 0% 100%;
+          -webkit-transform: scale(1, 1);
+          -ms-transform: scale(1, 1);
+          -moz-transform: scale(1, 1);
+          -o-transform: scale(1, 1);
+          transform: scale(1, 1);
+      }
+      100% {
+          -webkit-transform-origin: 0% 100%;
+          -ms-transform-origin: 0% 100%;
+          -moz-transform-origin: 0% 100%;
+          -o-transform-origin: 0% 100%;
+          transform-origin: 0% 100%;
+          -webkit-transform: scale(1, 0);
+          -ms-transform: scale(1, 0);
+          -moz-transform: scale(1, 0);
+          -o-transform: scale(1, 0);
+          transform: scale(1, 0);
+      }
+  }
+  @keyframes elastic {
+      0% {
+          -webkit-transform-origin: 0% 0%;
+          -ms-transform-origin: 0% 0%;
+          -moz-transform-origin: 0% 0%;
+          -o-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+          -webkit-transform: scale(1, 0);
+          -ms-transform: scale(1, 0);
+          -moz-transform: scale(1, 0);
+          -o-transform: scale(1, 0);
+          transform: scale(1, 0);
+      }
+      50% {
+          -webkit-transform-origin: 0% 0%;
+          -ms-transform-origin: 0% 0%;
+          -moz-transform-origin: 0% 0%;
+          -o-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+          -webkit-transform: scale(1, 1);
+          -ms-transform: scale(1, 1);
+          -moz-transform: scale(1, 1);
+          -o-transform: scale(1, 1);
+          transform: scale(1, 1);
+      }
+      50.1% {
+          -webkit-transform-origin: 0% 100%;
+          -ms-transform-origin: 0% 100%;
+          -moz-transform-origin: 0% 100%;
+          -o-transform-origin: 0% 100%;
+          transform-origin: 0% 100%;
+          -webkit-transform: scale(1, 1);
+          -ms-transform: scale(1, 1);
+          -moz-transform: scale(1, 1);
+          -o-transform: scale(1, 1);
+          transform: scale(1, 1);
+      }
+      100% {
+          -webkit-transform-origin: 0% 100%;
+          -ms-transform-origin: 0% 100%;
+          -moz-transform-origin: 0% 100%;
+          -o-transform-origin: 0% 100%;
+          transform-origin: 0% 100%;
+          -webkit-transform: scale(1, 0);
+          -ms-transform: scale(1, 0);
+          -moz-transform: scale(1, 0);
+          -o-transform: scale(1, 0);
+          transform: scale(1, 0);
+      }
+  }

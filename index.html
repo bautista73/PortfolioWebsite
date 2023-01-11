@@ -21,7 +21,7 @@
         </div>
     </header>
     <main>
-        <section id="side-bar-container">
+        <article id="side-bar-container">
             <div class="side-bar">
                 <div class="side-bar-top">
                     <span class="logo"><a href="#"><i class="fa-solid fa-bold"></i></a></span>
@@ -36,14 +36,32 @@
                     </ul>
                 </div>
             </div>
-        </section>
+        </article>
         <article id="scroll-container">
             <div class="scroll-position">
-
+                <nav id="scrollspy" class="scrollspy">
+                    <ul class="spy-menu">
+                      <li>
+                        <a data-scroll="home" href="#home" class="dot active"></a>
+                      </li>
+                      <li>
+                        <a data-scroll="about" href="#about" class="dot"></a>
+                      </li>
+                      <li>
+                        <a data-scroll="services" href="#services" class="dot"></a>
+                      </li>
+                      <li>
+                        <a data-scroll="test" href="#test" class="dot"></a>
+                      </li>
+                      <li>
+                        <a data-scroll="contact" href="#contact" class="dot"></a>
+                      </li>
+                    </ul>
+                  </nav>
             </div>
         </article>
         <section id="jumbotron">
-            <div class="intro-position">
+            <div class="jumbo-position">
                 <div class="intro-block">
                     <div class="intro-text intro-title">
                         <p>Front End Developer</p>
@@ -55,6 +73,15 @@
                         <p>Hello, I am Brandon Bautista, a front-end developer passionate about creating visually aesthetic, dynamic digital experiences.</p>
                     </div>
                     <br />
+                    <div id="scroll-wrapper">
+                        <div id="scroll-wrapper-inner">
+                            <div id="scroll-title">
+                            <span>DISCOVER MORE</span>
+                            </div>
+                            <div id="scroll-down">
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="gradient-position">
                     <div class="gradient-wrapper">
@@ -86,5 +113,6 @@
             </div>
         </section>
     </main>
+    <script src="/resources/scroll.js"></script>
 </body>
 </html>

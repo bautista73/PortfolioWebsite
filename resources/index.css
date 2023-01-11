@@ -1,4 +1,6 @@
 @import "background.css";
+@import "scrollspy.css";
+@import "animatedscroll.css";
 :root {
   --dark-mode: #090a0b;
   --light-mode: #e5e5e5;
@@ -62,7 +64,7 @@ body {
   left: 0;
   margin: 0;
   padding: 0;
-  width: 5rem;
+  width: 4rem;
   height: 100vh;
 }
 
@@ -127,6 +129,16 @@ body {
   color: var(--text-med-light);
 }
 
+#scroll-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  width: 4rem;
+  height: 100vh;
+}
+
 /* Main */
 main {
   padding-left: 5rem;
@@ -166,7 +178,7 @@ main {
 
 .intro-fill {
   font-family: "Inter", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.08rem;
   font-weight: 300;
   width: 28vw;
 }/*# sourceMappingURL=index.css.map */
