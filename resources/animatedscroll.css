@@ -1,35 +1,46 @@
-#scroll-down {
-  display: block;
+#scroll-wrapper {
   position: relative;
-  padding-top: 79px;
-  text-align: center;
+  height: 90%;
+  width: 10rem;
+  top: 3.5rem;
+}
+
+#scroll-wrapper-inner {
+  height: inherit;
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#scroll-down {
+  top: 1.5rem;
+  position: relative;
 }
 
 #scroll-title {
-  display: block;
   text-transform: uppercase;
   color: #cbcbcb;
   font-family: -apple-system, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 14px;
   font-weight: 300;
   text-align: center;
-  margin-bottom: 45px;
 }
 
 #scroll-down::before {
-  -webkit-animation: elastic 2.9s cubic-bezier(1, 0, 0, 1) infinite;
+  -webkit-animation: elastic 6s cubic-bezier(1, 0, 0, 1) infinite;
   /* Safari 4+ */
   /* Fx 5+ */
   /* Opera 12+ */
-  animation: elastic 2.9s cubic-bezier(1, 0, 0, 1) infinite;
+  animation: elastic 6s cubic-bezier(1, 0, 0, 1) infinite;
   /* IE 10+, Fx 29+ */
   position: absolute;
   top: 0px;
   left: 50%;
-  margin-left: -1px;
-  width: 2px;
-  height: 90px;
-  background: #cbcbcb;
+  width: 1.5px;
+  height: 2rem;
+  background: #4d4d4d;
   content: " ";
 }
 
