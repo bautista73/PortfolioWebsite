@@ -1,6 +1,7 @@
 @import "background.css";
 @import "scrollspy.css";
 @import "animatedscroll.css";
+@import "arrow.css";
 :root {
   --dark-mode: #090a0b;
   --light-mode: #e5e5e5;
@@ -87,23 +88,29 @@ body {
 }
 
 .logo {
-  padding-top: 2rem;
-  padding-bottom: 1rem;
   color: var(--text-med-light);
+  padding: 1.5rem 0 0.7rem 0;
 }
 
 .logo img {
-  width: 1.2rem;
+  width: 1.6rem;
 }
 
 .logo a {
   color: var(--text-med-light);
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
 }
 
-.side-bar-top p {
-  -ms-writing-mode: tb-lr;
-      writing-mode: vertical-lr;
-  text-orientation: sideways;
+.p-position {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.p-position p {
+  -ms-writing-mode: tb-rl;
+      writing-mode: tb-rl;
   font-family: -apple-system, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 300;
   font-size: 14px;
@@ -177,7 +184,7 @@ main {
 
 .intro-title {
   font-family: -apple-system, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 2.3rem;
+  font-size: 2.4rem;
 }
 
 .intro-fill {
@@ -185,6 +192,7 @@ main {
   font-size: 1.18rem;
   font-weight: 300;
   width: 30vw;
+  padding-bottom: 0.7rem;
 }
 
 #about {
