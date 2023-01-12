@@ -8,6 +8,8 @@
   button {
     background: none;
     border: none;
+    width: 11rem;
+    height: 2.8rem;
   }
   
   .button-arrow {
@@ -15,80 +17,59 @@
     height: inherit;
   }
 
-.arrow-up {
-  // background-color: #111;
-  height: 40px;
-  width: 11rem;
+.arrow-link {
+    width: 9rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-decoration: none;
+}
+
+.text-bar {
+    text-decoration: none;
+    font-family: -apple-system,'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--text-med-light);
+}
+
+.arrow,
+.arrow:before {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  border: 1px solid #666;
-  position: relative;
-  cursor: pointer;
-  transition: all 0.5s cubic-bezier(0.25, 1.7, 0.35, 1.5);
-  overflow: hidden;
+  margin-bottom: 7px;
 }
 
-.button-text {
-    padding-right: 1rem;
-    font-family: -apple-system,'Open Sans', 'Helvetica Neue', sans-serif;
-    text-transform: uppercase;
-    font-size: 14px;
-    color: var(--text-med-light);
-  }
-
-.left-arm {
-  position: absolute;
-  z-index: 1;
-  background-color: transparent;
-  top: 19px;
-  left: 3px;
-  width: 20px;
-  display: block;
-  transform: rotate(-45deg);
-  &:after {
-    content: "";
-    background-color: #666;
-    width: 20px;
-    height: 1px;
-    display: block;
-    border-radius: 1px;
-    transition: all 0.5s cubic-bezier(0.25, 1.7, 0.35, 1.5);
-    transform-origin: right center;
-    z-index: -1;
-  }
-}
-
-.right-arm {
-  position: absolute;
-  z-index: 1;
-  background-color: transparent;
-  top: 19px;
-  left: 17px;
-  width: 20px;
-  display: block;
+.arrow {
+  width: 12px;
+  height: 12px;
   transform: rotate(45deg);
-  border-radius: 2px;
-  &:after {
-    content: "";
-    background-color: #666;
-    width: 20px;
-    height: 1px;
-    display: block;
-    border-radius: 1px;
-    transition: all 0.5s cubic-bezier(0.25, 1.7, 0.35, 1.5);
-    transform-origin: left center;
-    z-index: -1;
-  }
+  border-left: none;
+  border-top: none;
+  border-right: 2px #fff solid;
+  border-bottom: 2px #fff solid;
 }
-
-.arrow-up:hover {
-  transition: all .1s;
-  .left-arm:after {
-    transform: rotate(-10deg);
+  
+.arrow:before{
+  content: '';
+  width: 6px;
+  height: 6px;
+  margin: auto;
+  border-left: none;
+  border-top: none;
+  border-right: 1px #fff solid;
+  border-bottom: 1px #fff solid;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-name: arrow;
   }
-  .right-arm:after {
-    transform: rotate(10deg);
-  }
-
+@keyframes arrow {
+  0%{
+    opacity: 1;
 }
+  100%{
+    opacity: 0;
+    transform: translate(-3px, -3px);
+}
+  }
