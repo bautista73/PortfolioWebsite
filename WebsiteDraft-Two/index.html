@@ -9,9 +9,55 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+    <link href="https://uploads-ssl.webflow.com/61ffb7e3a4bdb5613297a19f/625721851fd04d35a0cd3305_Ellipse%201.png" rel="shortcut icon" type="image/x-icon"/>
+    <link href="https://uploads-ssl.webflow.com/61ffb7e3a4bdb5613297a19f/625721819beae88f657d4c47_Ellipse%202.png" rel="apple-touch-icon"/>
+    <style>
+    body .transition {
+        display: block
+    }
+
+    .w-editor .transition {
+        display: none;
+    }
+
+    .no-scroll-transition {
+        overflow: hidden;
+        position: relative;
+    }
+
+    body:hover .cursor {
+        opacity: 100%;
+    }
+
+    .cursor {
+        pointer-events: none;
+    }
+
+    ::selection {
+        color: #f8f8f8;
+        background: #1d1d1d;
+    }
+    </style>
     <title>Brandon-Bautista</title>
 </head>
 <body>
+    <div class="general__code w-embed"><style>
+        .cursor{
+          pointer-events: none;
+      }  
+        a{
+          color: inherit;
+        text-decoration: none;
+      }
+        *{
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+      }
+    </style></div>
+    <div class="cursor">
+        <div class="cursor__dot">
+        </div>
+    </div>
     <div class="load top-load">
         <div class="top-bar"></div>
     </div>
@@ -20,7 +66,7 @@
             <div class="nav-items-wrapper">
                 <span class="nav-tab">&#169; 2023</span>
                 <div class="nav-links-wrapper">
-                    <div class="link-border border-1">
+                    <div onclick="location.href='#';" style="cursor: pointer;" class="link-border boxOne">
                         <p><a href="#">works</a></p>
                     </div>
                     <div class="link-border border-2">
@@ -76,5 +122,12 @@
             </div>
         </section>
     </main>
+    <!-- <svg class="curzr" hidden>
+        <filter id="motionblur" x="-100%" y="-100%" width="400%" height="400%">
+        <feGaussianBlur class="curzr-motion-blur" stdDeviation="0, 0"/>
+        </filter>
+        <circle cx="50%" cy="50%" r="10" fill="#120D27" filter="url(#motionblur)" />
+    </svg> -->
+    <script src="/WebsiteDraft-Two/resouces/index.js"></script>
 </body>
 </html>
