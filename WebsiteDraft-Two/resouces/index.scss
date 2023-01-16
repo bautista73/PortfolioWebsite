@@ -1,0 +1,241 @@
+:root {
+  --dark: rgb(29, 29, 29);
+  --dark-2: rgb(35,35,35);
+  --light: #f8f8f8;
+  --med-light: #d8d8d8;
+}
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body{
+  background-color: var(--dark);
+  color: var(--light);
+  font-family: acumin-pro, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding: 0 1rem;
+}
+
+.top-load {
+  height: 1rem;
+  width: 100%;
+  padding-bottom: 2rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.top-bar {
+  width: 58.7%;
+  height: inherit;
+  background-color: var(--light);
+}
+
+//header
+
+#header {
+  padding-top: 1rem;
+  height: 3rem;
+  width: 100%;
+}
+
+#navigation-wrapper {
+  height: 2.5rem;
+  width: 100%;
+  border-left: 1px solid var(--light);
+  border-bottom: 1px solid var(--light);
+  border-right: 1px solid var(--light);
+
+  & .nav-items-wrapper {
+
+    & .nav-tab {
+      font-size: .8rem;
+      width: 10%;
+      margin-left: 1rem;
+      color: var(--med-light);
+    }
+
+    width: 100%;
+    height: inherit;
+    display: flex;
+    align-items: center;
+
+    & .nav-links-wrapper {
+      margin: auto auto auto 31%;
+      width: 65%;
+      height: inherit;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+
+      & .link-border {
+        height: inherit;
+        width: 25%;
+        border-left: 1px solid var(--light);
+        display: flex;
+        align-items: center;
+        
+        &.border-1 {
+          
+        }
+        &.border-2 {
+          
+        }
+        &.border-3 {
+          
+        }
+        &.border-4 {
+          
+        }
+
+        & p {
+          font-size: .8rem;
+          text-transform: capitalize;
+          margin-left: 1rem;
+
+          & a {
+            text-decoration: none;
+            color: var(--med-light);
+          }
+        }
+      }
+    }
+  }
+}
+#about {
+  padding-top: 1rem;
+  height: 60vh;
+  width: 100%;
+
+  & .about-top-wrapper {
+    width: 82.5%;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+
+    & .about-wrap-block {
+      width: 100%;
+      height: auto;
+      padding-left: .5rem;
+      display: flex;
+      align-items: center;
+
+      & img {
+        width: 1.5rem;
+      }
+
+      & h1 {
+        color: var(--light);
+        font-family: 'Michroma', sans-serif;
+        font-size: 1.6rem;
+        font-weight: 400;
+      }
+    }
+  }
+  & .about-bottom-wrapper {
+    padding-top: .7rem;
+    height: inherit;
+    width: inherit;
+
+    & .about-right-block-wrapper {
+      float: right;
+      height: 50%;
+      width: 58.75%;
+      border-left: 1px solid var(--light);
+      border-bottom: 1px solid var(--light);
+      border-right: 1px solid var(--light);
+
+      & .a-info-top-wrap {
+        height: 80%;
+        display: flex;
+
+        & .about-text {
+          width: 90%;
+          padding: .5rem;
+          border-bottom: 1px solid var(--light);
+          & p {
+            width: 89%;
+            color: var(--med-light);
+            font-size: .8rem;
+          }
+        }
+
+        & .about-socials {
+          width: 30%;
+          padding: .5rem;
+          border-left: 1px solid var(--light);
+          border-bottom: 1px solid var(--light);
+
+          & ul li {
+            font-size: .8rem;
+            list-style: none;
+
+            & a {
+              text-decoration: none;
+              color: var(--med-light);
+            }
+          }
+        }
+      }
+      & .a-info-bottom-wrap {
+        height: 20%;
+        display: flex;
+        align-items: center;
+        font-size: .8rem;
+
+        & .current-text {
+          width: 89%;
+          height: auto;
+
+          & p {
+            padding: .5rem;
+            color: var(--med-light);
+          }
+        }
+
+        & .current-based {
+          width: 30%;
+          height: 100%;
+          border-left: 1px solid var(--light);
+          display: flex;
+          align-items: center;
+
+          & p {
+            padding: .5rem;
+            color: var(--med-light);
+          }
+        }
+      }
+    }
+  }
+}
+#name {
+  width: 100%;
+  height: 29vh;
+  display: flex;
+  justify-content: flex-end;
+
+  & .name-wrapper {
+    height: 100%;
+    width: 58.95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    & .name-b {
+      font-size: 4.1rem;
+      font-family: 'Michroma', sans-serif;
+      font-weight: 400;
+      color: var(--light);
+    }
+
+    & .bottom-bar {
+      width: 100%;
+      height: 1.7rem;
+      background-color: var(--light);
+    }
+  }
+}
