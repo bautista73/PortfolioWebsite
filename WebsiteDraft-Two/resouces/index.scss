@@ -1,5 +1,3 @@
-@import "cursor.css";
-
 :root {
   --dark: rgb(29, 29, 29);
   --dark-2: rgb(35,35,35);
@@ -23,6 +21,7 @@ body{
   padding: 0 1rem;
 }
 
+
 .top-load {
   height: 1rem;
   width: 100%;
@@ -36,59 +35,6 @@ body{
   height: inherit;
   background-color: var(--light);
 }
-
-
-.cursor {
-  position: fixed;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 9999999;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  height: 100vh;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items:center
-}
-
-.cursor__dot {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 1em;
-  height: 1em;
-  max-height: 14px;
-  max-width: 14px;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border: 1px #1d1d1d;
-  border-radius: 500px;
-  background-color: hsla(0, 0%, 100%, .01);
-  opacity: 1;
-  -webkit-backdrop-filter: invert(100%);
-  backdrop-filter: invert(100%);
-  -webkit-transition: height 350ms, width 350ms, opacity 350ms, max-height 350ms, max-width 350ms, -webkit-filter 350ms;
-  transition: filter 350ms, height 350ms, width 350ms, opacity 350ms, max-height 350ms, max-width 350ms, -webkit-filter 350ms;
-  color:#1d1d1d
-}
-
 
 //header
 
