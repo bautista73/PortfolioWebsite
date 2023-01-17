@@ -1,0 +1,22 @@
+:root {
+  --dark: rgb(29, 29, 29);
+  --dark-2: rgb(35,35,35);
+  --light: #f8f8f8;
+  --med-light: #d8d8d8;
+}
+
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.cursor {
+  width: 20px;
+  height: 20px;
+  background-color: var(--light);
+  border-radius: 50%;
+  position: absolute;
+  pointer-events: none;
+  mix-blend-mode: difference;
+}/*# sourceMappingURL=index.css.map */
