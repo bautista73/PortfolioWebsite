@@ -9,38 +9,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
-    <link href="https://uploads-ssl.webflow.com/61ffb7e3a4bdb5613297a19f/625721851fd04d35a0cd3305_Ellipse%201.png" rel="shortcut icon" type="image/x-icon"/>
-    <link href="https://uploads-ssl.webflow.com/61ffb7e3a4bdb5613297a19f/625721819beae88f657d4c47_Ellipse%202.png" rel="apple-touch-icon"/>
-    <style>
-    body .transition {
-        display: block
-    }
-
-    .w-editor .transition {
-        display: none;
-    }
-
-    .no-scroll-transition {
-        overflow: hidden;
-        position: relative;
-    }
-
-    body:hover .cursor {
-        opacity: 100%;
-    }
-
-    .cursor {
-        pointer-events: none;
-    }
-
-    ::selection {
-        color: #f8f8f8;
-        background: #1d1d1d;
-    }
-    </style>
     <title>Brandon-Bautista</title>
 </head>
 <body>
+    <div class="cursor"></div>
     <div class="load top-load">
         <div class="top-bar"></div>
     </div>
@@ -49,27 +21,27 @@
             <div class="nav-items-wrapper">
                 <span class="nav-tab">&#169; 2023</span>
                 <div class="nav-links-wrapper">
-                    <div onclick="location.href='#';" style="cursor: pointer;" class="link-border boxOne">
-                        <p><a href="#">works</a></p>
+                    <div onclick="openTab(event, 'Works')" style="cursor: none;" class="link-border boxOne tablinks">
+                        <p>works</p>
                     </div>
-                    <div class="link-border border-2">
-                        <p><a href="#">about</a></p>
+                    <div onclick="openTab(event, 'About')" style="cursor: none;" class="link-border boxTwo tablinks">
+                        <p>about</p>
                     </div>
-                    <div class="link-border border-3">
-                        <p><a href="#">contact</a></p>
+                    <div onclick="openTab(event, 'Contact')" style="cursor: none;" class="link-border boxThree tablinks">
+                        <p>contact</p>
                     </div>
-                    <div class="link-border border-4">
-                        <p><a href="#">CV</a></p>
+                    <div onclick="openTab(event, 'CV')" style="cursor: none;" class="link-border boxFour tablinks">
+                        <p>CV</p>
                     </div>
                 </div>
             </div>
         </nav>
     </header>
     <main>
-        <section id="about">
+        <section id="Home" class="tabcontent">
             <div class="about-top-wrapper">
                 <div class="about-wrap-block">
-                    <img src="/WebsiteDraft-Two/resouces/Images/b2c.png" alt="B2" />
+                    <img src="/WebsiteDraft-Two/resouces/Images/b2c.png" alt="B2" onclick="openTab(event, 'Home')" style="cursor: none;"/>
                 </div>
                 <div class="about-wrap-block">
                     <h1>Frontend Developer</h1>
@@ -97,20 +69,29 @@
                     </div>
                 </div>
             </div>
+            <article id="name">
+                <div class="name-wrapper">
+                    <span class="name-b">Brandon Bautista</span>
+                    <div class="bottom-bar"></div>
+                </div>
+            </article>
         </section>
-        <section id="name">
-            <div class="name-wrapper">
-                <span class="name-b">Brandon Bautista</span>
-                <div class="bottom-bar"></div>
-            </div>
+        <section id="Works" class="tabcontent">
+
+        </section>
+        <section id="About" class="tabcontent">
+
+        </section>
+        <section id="Contact" class="tabcontent">
+
+        </section>
+        <section id="CV" class="tabcontent">
+
         </section>
     </main>
-    <!-- <svg class="curzr" hidden>
-        <filter id="motionblur" x="-100%" y="-100%" width="400%" height="400%">
-        <feGaussianBlur class="curzr-motion-blur" stdDeviation="0, 0"/>
-        </filter>
-        <circle cx="50%" cy="50%" r="10" fill="#120D27" filter="url(#motionblur)" />
-    </svg> -->
+    <script>
+        document.getElementById("Home").click();
+    </script>
     <script src="/WebsiteDraft-Two/resouces/index.js"></script>
 </body>
 </html>
