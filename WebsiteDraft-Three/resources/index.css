@@ -30,6 +30,7 @@ body {
   height: 100%;
   background-color: var(--nandor);
   font-family: "Inter", sans-serif;
+  letter-spacing: -0.5px;
 }
 
 main {
@@ -241,30 +242,162 @@ main {
 #Home .div4 {
   grid-area: 2/5/3/9;
   border-radius: 16px;
-  background-color: var(--light);
+  display: flex;
+  background-color: var(--foggy-gray);
+}
+#Home .div4 .div4-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 1rem;
+  line-height: 2rem;
+  width: 100%;
+  height: 100%;
+}
+#Home .div4 .div4-container h4 {
+  font-weight: 500;
+  color: var(--ebony-clay);
+}
+#Home .div4 .div4-container .div4-bottom-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#Home .div4 .div4-container .div4-bottom-container button {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  border: 2px solid var(--gray);
+  background-color: var(--nandor);
+}
+#Home .div4 .div4-container .div4-bottom-container button i {
+  color: var(--gray);
+}
+#Home .div4 .div4-container .div4-bottom-container h2 {
+  font-weight: 600;
+  color: var(--ebony);
 }
 #Home .div5 {
   grid-area: 2/3/3/5;
   border-radius: 16px;
-  background-color: var(--light);
+  display: flex;
+  justify-content: center;
+  background-color: var(--foggy-gray);
+}
+#Home .div5 .div5-container {
+  display: flex;
+  padding: 1rem;
+  width: 100%;
+  height: 100%;
+}
+#Home .div5 .div5-container .div5-button-container {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+#Home .div5 .div5-container .div5-button-container .fa-twitter {
+  margin: auto;
+  font-size: 6.5em;
+  color: var(--olive);
+}
+#Home .div5 .div5-container .div5-button-container button {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  border: 2px solid var(--gray);
+  background-color: var(--nandor);
+}
+#Home .div5 .div5-container .div5-button-container button i {
+  transform: rotate(45deg);
+  color: var(--gray);
+}
+#Home .div5 .div5-container .div5-button-container h2 {
+  font-weight: 600;
+  color: var(--ebony);
 }
 #Home .div6 {
   grid-area: 2/1/3/3;
   border-radius: 16px;
-  background-color: var(--light);
+  display: flex;
+  background-color: var(--foggy-gray);
+}
+#Home .div6 .div6-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 1rem;
+  line-height: 2rem;
+  width: 100%;
+  height: 100%;
+}
+#Home .div6 .div6-container h4 {
+  font-weight: 500;
+  color: var(--ebony-clay);
+}
+#Home .div6 .div6-container .div6-bottom-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#Home .div6 .div6-container .div6-bottom-container button {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  border: 2px solid var(--gray);
+  background-color: var(--nandor);
+}
+#Home .div6 .div6-container .div6-bottom-container button i {
+  color: var(--gray);
+}
+#Home .div6 .div6-container .div6-bottom-container h2 {
+  font-weight: 600;
+  color: var(--ebony);
 }
 #Home .div7 {
   grid-area: 3/1/4/5;
   border-radius: 16px;
-  background-color: var(--light);
+  display: flex;
+  background-color: var(--foggy-gray);
+}
+#Home .div7 .div7-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 1rem;
+  line-height: 2rem;
+  width: 100%;
+  height: 100%;
+}
+#Home .div7 .div7-container h4 {
+  font-weight: 500;
+  color: var(--ebony-clay);
+}
+#Home .div7 .div7-container .div7-bottom-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#Home .div7 .div7-container .div7-bottom-container h2 {
+  font-weight: 600;
+  color: var(--ebony);
+}
+#Home .div7 .div7-container .div7-bottom-container button {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  border: 2px solid var(--gray);
+  background-color: var(--nandor);
+}
+#Home .div7 .div7-container .div7-bottom-container button i {
+  color: var(--gray);
 }
 #Home .div8 {
-  grid-area: 3/5/4/7;
+  grid-area: 3/5/4/9;
   border-radius: 16px;
-  background-color: var(--light);
-}
-#Home .div9 {
-  grid-area: 3/7/4/9;
-  border-radius: 16px;
-  background-color: var(--light);
+  display: flex;
+  background-color: var(--foggy-gray);
 }/*# sourceMappingURL=index.css.map */
