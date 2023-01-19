@@ -34,6 +34,7 @@ body {
 }
 
 main {
+  position: relative;
   width: 100%;
   height: 100%;
   display: flex;
@@ -70,6 +71,7 @@ main {
 }
 #header #navigation .nav-logo img {
   width: 1.5rem;
+  filter: invert(80%);
 }
 #header #navigation .nav-items {
   width: 30%;
@@ -80,7 +82,7 @@ main {
   list-style: none;
 }
 #header #navigation .nav-items ul li {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: 500;
 }
 #header #navigation .nav-items ul li a {
@@ -167,8 +169,8 @@ main {
   width: 100%;
   height: 100%;
 }
-#Home .div2 .div2-container .fa-id-badge {
-  font-size: 2.3em;
+#Home .div2 .div2-container .fa-certificate {
+  font-size: 2em;
   color: var(--olive);
   padding-bottom: 0.5rem;
 }
@@ -210,11 +212,6 @@ main {
   line-height: 2rem;
   width: 100%;
   height: 100%;
-}
-#Home .div3 .div3-container .fa-paper-plane {
-  font-size: 2em;
-  color: var(--olive);
-  padding-bottom: 0.5rem;
 }
 #Home .div3 .div3-container h4 {
   font-weight: 500;
@@ -297,7 +294,7 @@ main {
   align-items: flex-end;
   justify-content: space-between;
 }
-#Home .div5 .div5-container .div5-button-container .fa-twitter {
+#Home .div5 .div5-container .div5-button-container .fa-github {
   margin: auto;
   font-size: 6.5em;
   color: var(--olive);
@@ -372,6 +369,11 @@ main {
   width: 100%;
   height: 100%;
 }
+#Home .div7 .div7-container .fa-paper-plane {
+  font-size: 2em;
+  color: var(--olive);
+  padding-bottom: 0.5rem;
+}
 #Home .div7 .div7-container h4 {
   font-weight: 500;
   color: var(--ebony-clay);
@@ -417,12 +419,30 @@ main {
 }
 #Home .div8 .div8-container .div8-bottom-container {
   width: 100%;
+  height: 56%;
+  display: flex;
+  align-items: flex-end;
+}
+#Home .div8 .div8-container .div8-bottom-container .icons-text {
+  width: inherit;
+  height: inherit;
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
 }
-#Home .div8 .div8-container .div8-bottom-container h2 {
+#Home .div8 .div8-container .div8-bottom-container .icons-text .h-i-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#Home .div8 .div8-container .div8-bottom-container .icons-text .h-i-group h2 {
   font-weight: 600;
-  color: var(--ebony);
+  color: var(--ebony-clay);
+}
+#Home .div8 .div8-container .div8-bottom-container .icons-text .h-i-group i {
+  font-size: 2em;
+  color: var(--olive);
+  padding-bottom: 0.5rem;
 }
 #Home .div8 .div8-container .div8-bottom-container button {
   height: 2rem;
@@ -433,4 +453,45 @@ main {
 }
 #Home .div8 .div8-container .div8-bottom-container button i {
   color: var(--gray);
+}
+
+#footer {
+  width: 100%;
+  height: 15%;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#footer .footer-socials {
+  font-size: 1.3rem;
+  width: 20%;
+}
+#footer .footer-socials ul {
+  display: flex;
+  justify-content: space-around;
+}
+#footer .footer-socials ul li {
+  list-style: none;
+}
+#footer .footer-socials ul li a {
+  color: var(--gray);
+}
+#footer .footer-info {
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--light-gray);
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+#footer .footer-info .b-brandon, #footer .footer-info .b2 {
+  color: var(--gray);
+}
+#footer .footer-info .fa-cat {
+  font-size: 0.68rem;
 }/*# sourceMappingURL=index.css.map */
