@@ -1,3 +1,4 @@
+@import url(/WebsiteDraft-Three/resources/additionalstyles/divfloat.css);
 :root {
   --dark: rgb(29, 29, 29);
   --dark-2: rgb(35,35,35);
@@ -44,20 +45,30 @@ main {
 .cursor {
   width: 20px;
   height: 20px;
+  z-index: 1;
   background-color: var(--light);
   border-radius: 50%;
   position: absolute;
   pointer-events: none;
   mix-blend-mode: difference;
-  z-index: 2;
+}
+
+.tab {
+  overflow: hidden;
+}
+
+.tabcontent {
+  display: none;
 }
 
 #header {
-  position: fixed;
+  position: absolute;
+  top: 0;
   width: 100%;
   height: 5rem;
   display: flex;
   justify-content: center;
+  z-index: 1;
 }
 #header #navigation {
   width: 93%;
@@ -81,13 +92,18 @@ main {
   justify-content: space-around;
   list-style: none;
 }
-#header #navigation .nav-items ul li {
+#header #navigation .nav-items ul li button {
   font-size: 0.9rem;
   font-weight: 500;
+  background: none;
+  border: none;
+  color: var(--gray);
 }
-#header #navigation .nav-items ul li a {
-  color: var(--ebony);
-  text-decoration: none;
+#header #navigation .nav-items ul li button:hover {
+  color: black;
+}
+#header #navigation .nav-items ul li button.active {
+  color: var(--olive);
 }
 #header #navigation .nav-cv-button {
   width: 30%;

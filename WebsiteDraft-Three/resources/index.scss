@@ -1,3 +1,5 @@
+@import url(/WebsiteDraft-Three/resources/additionalstyles/divfloat.css);
+
 :root {
     --dark: rgb(29, 29, 29);
     --dark-2: rgb(35,35,35);
@@ -48,20 +50,30 @@
   .cursor {
     width:20px;
     height:20px;
+    z-index: 1;
     background-color: var(--light);
     border-radius:50%;
     position: absolute;
     pointer-events: none;
     mix-blend-mode: difference;
-    z-index: 2;
+  }
+
+  .tab {
+    overflow: hidden;
+  }
+
+  .tabcontent {
+    display: none;
   }
 
 #header {
-    position: fixed;
+    position: absolute;
+    top: 0;
     width: 100%;
     height: 5rem;
     display: flex;
     justify-content: center;
+    z-index: 1;
 
     #navigation {
     width: 93%;
@@ -83,12 +95,19 @@
                 display: flex;
                 justify-content: space-around;
                 list-style: none;
-                & li {
-                    font-size: .9rem;
-                    font-weight: 500;
-                    & a {
-                        color: var(--ebony);
-                        text-decoration: none;
+                & li {       
+                    & button {
+                        font-size: .9rem;
+                        font-weight: 500;
+                        background: none;
+                        border: none;
+                        color: var(--gray);
+                        &:hover {
+                            color: black;
+                        }
+                        &.active {
+                            color: var(--olive);
+                        }
                     }
                 }
             }
@@ -120,11 +139,17 @@
     margin-top: 5.5rem;
     height: 70vh;
     width: 90%;
+
+    & .div-shadow {
+        
+    }
+    
     & .div1 {
         grid-area: 1 / 1 / 2 / 5;
         border-radius: 16px;
         display: flex;
         background-color: var(--foggy-gray);
+
             & .div1-container {
                 padding: 1rem;
                 line-height: 2rem;
