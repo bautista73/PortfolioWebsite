@@ -1,7 +1,3 @@
-require("@babel/core").transform("code", {
-    presets: ["@babel/preset-env"],
-  });
-
 // tab JS
 function openTab(evt, tabName) {
     
@@ -28,12 +24,4 @@ function myInfoTab(){
     document.getElementById('aboutOpen').click();
 }
 
-document.getElementById("defaultOpen").click();
-
-document.querySelector('.cv-button').onmousemove = (e) => {
-    const x = e.pageX - e.target.offsetLeft
-    const y = e.pageY - e.target.offsetTop
-
-    e.target.style.setProperty('--x', '${ x }px')
-    e.target.style.setProperty('--y', '${ y }px')
-}
+document.getElementById("aboutOpen").click(); // change this

@@ -1,4 +1,5 @@
 @import url(/WebsiteDraft-Three/resources/additionalstyles/divfloat.css);
+@import url(/WebsiteDraft-Three/resources/additionalstyles/animatedentrance.css);
 :root {
   --dark: rgb(29, 29, 29);
   --dark-2: rgb(35,35,35);
@@ -549,7 +550,7 @@ main {
   color: rgba(138, 138, 138, 0.4);
 }
 #About .div2 {
-  grid-area: 2/1/4/4;
+  grid-area: 2/1/5/4;
   border-radius: 16px;
   display: flex;
   align-items: flex-start;
@@ -566,11 +567,11 @@ main {
   padding: 0.2em 0em;
 }
 #About .div2 .div2-text-spacer h4 {
-  font-weight: 400;
+  font-weight: 500;
   color: var(--ebony-clay);
-  line-height: 1.2em;
+  line-height: 1.62em;
 }
-#About .div2 .div2-text-spacer h4 .fa-chess, #About .div2 .div2-text-spacer h4 .fa-dumbbell, #About .div2 .div2-text-spacer h4 .fa-paintbrush {
+#About .div2 .div2-text-spacer h4 .fa-chess {
   color: var(--light-gray);
   font-size: 0.8rem;
 }
@@ -695,7 +696,7 @@ main {
   color: var(--pearl-blush);
 }
 #About .div4 {
-  grid-area: 4/1/5/4;
+  grid-area: 4/4/5/7;
   border-radius: 16px;
   padding: 1rem;
   background-color: var(--foggy-gray);
@@ -727,13 +728,6 @@ main {
   height: 1px;
   width: 20%;
   border: 1px solid var(--light-gray);
-}
-#About .div5 {
-  grid-area: 4/4/5/7;
-  border-radius: 16px;
-  display: flex;
-  padding: 1rem;
-  background-color: var(--foggy-gray);
 }
 
 #footer {

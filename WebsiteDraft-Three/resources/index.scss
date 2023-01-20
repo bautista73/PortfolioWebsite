@@ -1,4 +1,5 @@
 @import url(/WebsiteDraft-Three/resources/additionalstyles/divfloat.css);
+@import url(/WebsiteDraft-Three/resources/additionalstyles/animatedentrance.css);
 
 :root {
     --dark: rgb(29, 29, 29);
@@ -606,7 +607,7 @@
   #About {
     display: grid; 
     grid-template-columns: repeat(6, 1fr); 
-    grid-template-rows: repeat(4, 1fr); 
+    grid-template-rows: repeat(4, 1fr);  
     grid-column-gap: 14px;
     grid-row-gap: 14px; 
     margin-top: 5.5rem;
@@ -624,7 +625,7 @@
         }
     } 
     .div2 { 
-        grid-area: 2 / 1 / 4 / 4;
+        grid-area: 2 / 1 / 5 / 4;
         border-radius: 16px;
         display: flex;
         align-items: flex-start;
@@ -639,10 +640,10 @@
         .div2-text-spacer{ 
             padding: .2em 0em;
             h4 {
-                font-weight: 400;
+                font-weight: 500;
                 color: var(--ebony-clay);
-                line-height: 1.2em;
-                & .fa-chess, .fa-dumbbell, .fa-paintbrush {
+                line-height: 1.62em;
+                & .fa-chess {
                     color: var(--light-gray);
                     font-size: .80rem;
                 }
@@ -771,7 +772,7 @@
         }
     }
     .div4 { 
-        grid-area: 4 / 1 / 5 / 4;
+        grid-area: 4 / 4 / 5 / 7;
         border-radius: 16px;
         padding: 1rem;
         background-color: var(--foggy-gray);
@@ -803,13 +804,6 @@
                 }
             }
         } 
-    } 
-    .div5 { 
-        grid-area: 4 / 4 / 5 / 7;
-        border-radius: 16px;
-        display: flex;
-        padding: 1rem;
-        background-color: var(--foggy-gray); 
     } 
   }
   #Resume {

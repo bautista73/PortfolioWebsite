@@ -1,102 +1,12 @@
-:root {
-  ---defaultDuration: 3s;
-  --primaryColour: #ececec;
-  --secondaryColour: #666;
-  --shadowColour: rgba(0, 0, 0, .6);
-}
-
-@-webkit-keyframes hover {
-  50% {
-    transform: translateY(-3px);
-  }
-  100% {
-    transform: translateY(-6px);
-  }
-}
-
-@keyframes hover {
-  50% {
-    transform: translateY(-3px);
-  }
-  100% {
-    transform: translateY(-6px);
-  }
-}
-@-webkit-keyframes hover-shadow {
-  0% {
-    transform: translateY(6px);
-    opacity: 0.4;
-  }
-  50% {
-    transform: translateY(3px);
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(6px);
-    opacity: 0.4;
-  }
-}
-@keyframes hover-shadow {
-  0% {
-    transform: translateY(6px);
-    opacity: 0.4;
-  }
-  50% {
-    transform: translateY(3px);
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(6px);
-    opacity: 0.4;
-  }
-}
 .hover-shadow {
-  transition-duration: --defaultDuration;
-  transition-property: transform;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-}
-.hover-shadow:before {
-  pointer-events: none;
-  position: absolute;
-  z-index: -1;
-  top: 100%;
-  left: 5%;
-  height: 10px;
-  width: 90%;
-  opacity: 0;
-  transition-duration: --defaultDuration;
-  transition-property: transform opacity;
+  border-radius: 16px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 1px 2px rgba(88, 129, 87, 0.45);
 }
 .hover-shadow:hover {
-  transform: translateY(-2px);
-  -webkit-animation-name: hover;
-          animation-name: hover;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
-  box-shadow: 0 8px 8px -4px #588157;
+  box-shadow: 0 5px 15px rgba(88, 129, 87, 0.7);
 }
-.hover-shadow:hover:before {
-  opacity: 1;
-  -webkit-animation-name: hover-shadow;
-          animation-name: hover-shadow;
-  -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
-  -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
+.hover-shadow:hover::after {
+  box-shadow: 0 5px 15px rgba(88, 129, 87, 0.7);
+  transition: opacity 0.3s ease-in-out;
 }/*# sourceMappingURL=divfloat.css.map */
