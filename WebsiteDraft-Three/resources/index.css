@@ -602,33 +602,76 @@ main {
   height: 35%;
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
-  background-color: #60C689;
+  align-items: flex-end;
+  list-style: none;
 }
-#About .div3 .div3-container .div3-programming i {
-  font-size: 2.5rem;
-  color: var(--gray);
-}
-#About .div3 .div3-container .div3-programming .csharp-container {
+#About .div3 .div3-container .div3-programming li {
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: flex-end;
 }
-#About .div3 .div3-container .div3-programming .csharp-container img {
-  width: 3rem;
+#About .div3 .div3-container .div3-programming li i {
+  color: var(--gray);
+}
+#About .div3 .div3-container .div3-programming li .fa-node-js {
+  font-size: 2.7rem;
+}
+#About .div3 .div3-container .div3-programming li .fa-react {
+  font-size: 2.7rem;
+}
+#About .div3 .div3-container .div3-programming li .fa-sass {
+  font-size: 2.6rem;
+}
+#About .div3 .div3-container .div3-programming li img {
+  width: 2.8rem;
   filter: invert(23%) sepia(0%) saturate(1809%) hue-rotate(141deg) brightness(94%) contrast(72%);
 }
+#About .div3 .div3-container .div3-programming li:hover:nth-child(1) i {
+  color: #6cc24a;
+}
+#About .div3 .div3-container .div3-programming li:hover:nth-child(2) {
+  filter: invert(25%) sepia(73%) saturate(5255%) hue-rotate(264deg) brightness(89%) contrast(99%);
+}
+#About .div3 .div3-container .div3-programming li:hover:nth-child(3) i {
+  color: #61DBFB;
+}
+#About .div3 .div3-container .div3-programming li:hover:nth-child(4) i {
+  color: #cc6699;
+}
 #About .div3 .div3-container .div3-design {
-  @import url(https://fonts.googleapis.com/css?family=Lato:700);
   width: 100%;
   height: 35%;
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: flex-end;
+  list-style: none;
 }
-#About .div3 .div3-container .div3-design i {
+#About .div3 .div3-container .div3-design li {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+#About .div3 .div3-container .div3-design li i {
   font-size: 2.5rem;
   color: var(--gray);
+}
+#About .div3 .div3-container .div3-design li img {
+  width: 2.8rem;
+  filter: invert(23%) sepia(0%) saturate(1809%) hue-rotate(141deg) brightness(94%) contrast(72%);
+}
+#About .div3 .div3-container .div3-design li:hover:nth-child(1) i {
+  background: rgb(255, 59, 0);
+  background: linear-gradient(180deg, rgb(255, 59, 0) 0%, rgb(249, 60, 20) 29%, rgb(174, 77, 255) 34%, rgb(167, 82, 250) 66%, rgb(0, 212, 123) 71%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#About .div3 .div3-container .div3-design li:hover:nth-child(2) {
+  background: rgb(249, 123, 20);
+  background: linear-gradient(90deg, rgb(249, 123, 20) 0%, rgb(249, 123, 20) 10%, rgb(255, 194, 77) 33%, rgb(255, 194, 77) 66%, rgb(249, 123, 20) 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 #About .div3 .div3-container .div3-design .photoshop {
   background-color: var(--gray);
@@ -639,8 +682,14 @@ main {
   justify-content: center;
   align-items: center;
 }
+#About .div3 .div3-container .div3-design .photoshop:hover {
+  background-color: #001E36;
+}
+#About .div3 .div3-container .div3-design .photoshop:hover .photoshop-letters {
+  color: #70c4ff;
+}
 #About .div3 .div3-container .div3-design .photoshop .photoshop-letters {
-  font-family: "Lato", sans-serif;
+  font-weight: 500;
   text-transform: none;
   font-size: 1.2em;
   color: var(--pearl-blush);
@@ -648,13 +697,42 @@ main {
 #About .div4 {
   grid-area: 4/1/5/4;
   border-radius: 16px;
-  display: flex;
+  padding: 1rem;
   background-color: var(--foggy-gray);
+}
+#About .div4 .div4-container {
+  width: 100%;
+  line-height: 2rem;
+}
+#About .div4 .div4-container h2 {
+  font-weight: 600;
+  color: var(--ebony);
+}
+#About .div4 .div4-container .edu-wrapper-1, #About .div4 .div4-container .edu-wrapper-2 {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+#About .div4 .div4-container .edu-wrapper-1 h4, #About .div4 .div4-container .edu-wrapper-2 h4 {
+  font-weight: 500;
+  color: var(--ebony-clay);
+}
+#About .div4 .div4-container .edu-wrapper-1 h4 .edu-year, #About .div4 .div4-container .edu-wrapper-2 h4 .edu-year {
+  padding-left: 0.5rem;
+  color: var(--light-gray);
+}
+#About .div4 .div4-container .edu-wrapper-1 hr, #About .div4 .div4-container .edu-wrapper-2 hr {
+  margin: 0 1rem;
+  height: 1px;
+  width: 20%;
+  border: 1px solid var(--light-gray);
 }
 #About .div5 {
   grid-area: 4/4/5/7;
   border-radius: 16px;
   display: flex;
+  padding: 1rem;
   background-color: var(--foggy-gray);
 }
 
