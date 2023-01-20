@@ -2,8 +2,10 @@
 :root {
   --dark: rgb(29, 29, 29);
   --dark-2: rgb(35,35,35);
-  --gray: rgb(75, 75, 75);
+  --gray: #4b4b4b;
   --light-gray: rgb(138, 138, 138);
+  --lighter-gray: rgb(200,200,200);
+  --lightest-gray: rgb(220, 220, 220);
   --light: #fbfbfb;
   --med-light: #e4e4e4;
   --blue: #276BB0;
@@ -13,6 +15,7 @@
   --rose: #C21858;
   --light-rose: #E91E63;
   --olive: #588157;
+  --light-olive: #aecead;
   --ebony: #202020;
   --ebony-clay: #333533;
   --nandor: #ccc5b9;
@@ -40,17 +43,6 @@ main {
   height: 100%;
   display: flex;
   justify-content: center;
-}
-
-.cursor {
-  width: 20px;
-  height: 20px;
-  z-index: 1;
-  background-color: var(--light);
-  border-radius: 50%;
-  position: absolute;
-  pointer-events: none;
-  mix-blend-mode: difference;
 }
 
 .tab {
@@ -111,13 +103,18 @@ main {
   justify-content: flex-end;
 }
 #header #navigation .nav-cv-button .cv-button {
-  background-color: var(--ebony);
+  background-color: var(--gray);
   color: var(--pearl-blush);
   padding: 0.6rem;
   border-radius: 20px;
   border-style: none;
   font-size: 0.8rem;
   font-weight: 500;
+  transition: all 0.3s ease-in-out;
+}
+#header #navigation .nav-cv-button .cv-button:hover {
+  background: var(--olive);
+  color: var(--pearl-blush);
 }
 
 #Home {
@@ -163,11 +160,18 @@ main {
   height: 2rem;
   width: 2rem;
   border-radius: 50%;
-  border: 2px solid var(--gray);
-  background-color: var(--nandor);
+  border: 2px solid var(--light-gray);
+  background-color: var(--lightest-gray);
 }
 #Home .div1 .div1-container .div1-bottom-container button i {
-  color: var(--gray);
+  color: var(--light-gray);
+}
+#Home .div1:hover .div1-container .div1-bottom-container button {
+  border: 2px solid var(--olive);
+  background-color: var(--light-olive);
+}
+#Home .div1:hover .div1-container .div1-bottom-container button i {
+  color: var(--olive);
 }
 #Home .div2 {
   grid-area: 1/5/2/7;
@@ -184,6 +188,9 @@ main {
   line-height: 2rem;
   width: 100%;
   height: 100%;
+}
+#Home .div2 .div2-container.active {
+  color: var(--olive);
 }
 #Home .div2 .div2-container .fa-certificate {
   font-size: 2em;
@@ -203,15 +210,22 @@ main {
   height: 2rem;
   width: 2rem;
   border-radius: 50%;
-  border: 2px solid var(--gray);
-  background-color: var(--nandor);
+  border: 2px solid var(--light-gray);
+  background-color: var(--lightest-gray);
 }
 #Home .div2 .div2-container .div2-bottom-container button i {
-  color: var(--gray);
+  color: var(--light-gray);
 }
 #Home .div2 .div2-container .div2-bottom-container h2 {
   font-weight: 600;
   color: var(--ebony);
+}
+#Home .div2:hover .div2-container .div2-bottom-container button {
+  border: 2px solid var(--olive);
+  background-color: var(--light-olive);
+}
+#Home .div2:hover .div2-container .div2-bottom-container button i {
+  color: var(--olive);
 }
 #Home .div3 {
   grid-area: 1/7/2/9;
@@ -242,15 +256,22 @@ main {
   height: 2rem;
   width: 2rem;
   border-radius: 50%;
-  border: 2px solid var(--gray);
-  background-color: var(--nandor);
+  border: 2px solid var(--light-gray);
+  background-color: var(--lightest-gray);
 }
 #Home .div3 .div3-container .div3-bottom-container button i {
-  color: var(--gray);
+  color: var(--light-gray);
 }
 #Home .div3 .div3-container .div3-bottom-container h2 {
   font-weight: 600;
   color: var(--ebony);
+}
+#Home .div3:hover .div3-container .div3-bottom-container button {
+  border: 2px solid var(--olive);
+  background-color: var(--light-olive);
+}
+#Home .div3:hover .div3-container .div3-bottom-container button i {
+  color: var(--olive);
 }
 #Home .div4 {
   grid-area: 2/5/3/9;
@@ -281,15 +302,22 @@ main {
   height: 2rem;
   width: 2rem;
   border-radius: 50%;
-  border: 2px solid var(--gray);
-  background-color: var(--nandor);
+  border: 2px solid var(--light-gray);
+  background-color: var(--lightest-gray);
 }
 #Home .div4 .div4-container .div4-bottom-container button i {
-  color: var(--gray);
+  color: var(--light-gray);
 }
 #Home .div4 .div4-container .div4-bottom-container h2 {
   font-weight: 600;
   color: var(--ebony);
+}
+#Home .div4:hover .div4-container .div4-bottom-container button {
+  border: 2px solid var(--olive);
+  background-color: var(--light-olive);
+}
+#Home .div4:hover .div4-container .div4-bottom-container button i {
+  color: var(--olive);
 }
 #Home .div5 {
   grid-area: 2/3/3/5;
@@ -319,16 +347,23 @@ main {
   height: 2rem;
   width: 2rem;
   border-radius: 50%;
-  border: 2px solid var(--gray);
-  background-color: var(--nandor);
+  border: 2px solid var(--light-gray);
+  background-color: var(--lightest-gray);
 }
 #Home .div5 .div5-container .div5-button-container button i {
+  color: var(--light-gray);
   transform: rotate(45deg);
-  color: var(--gray);
 }
 #Home .div5 .div5-container .div5-button-container h2 {
   font-weight: 600;
   color: var(--ebony);
+}
+#Home .div5:hover .div5-container .div5-button-container button {
+  border: 2px solid var(--olive);
+  background-color: var(--light-olive);
+}
+#Home .div5:hover .div5-container .div5-button-container button i {
+  color: var(--olive);
 }
 #Home .div6 {
   grid-area: 2/1/3/3;
@@ -359,15 +394,22 @@ main {
   height: 2rem;
   width: 2rem;
   border-radius: 50%;
-  border: 2px solid var(--gray);
-  background-color: var(--nandor);
+  border: 2px solid var(--light-gray);
+  background-color: var(--lightest-gray);
 }
 #Home .div6 .div6-container .div6-bottom-container button i {
-  color: var(--gray);
+  color: var(--light-gray);
 }
 #Home .div6 .div6-container .div6-bottom-container h2 {
   font-weight: 600;
   color: var(--ebony);
+}
+#Home .div6:hover .div6-container .div6-bottom-container button {
+  border: 2px solid var(--olive);
+  background-color: var(--light-olive);
+}
+#Home .div6:hover .div6-container .div6-bottom-container button i {
+  color: var(--olive);
 }
 #Home .div7 {
   grid-area: 3/1/4/5;
@@ -407,11 +449,18 @@ main {
   height: 2rem;
   width: 2rem;
   border-radius: 50%;
-  border: 2px solid var(--gray);
-  background-color: var(--nandor);
+  border: 2px solid var(--light-gray);
+  background-color: var(--lightest-gray);
 }
 #Home .div7 .div7-container .div7-bottom-container button i {
-  color: var(--gray);
+  color: var(--light-gray);
+}
+#Home .div7:hover .div7-container .div7-bottom-container button {
+  border: 2px solid var(--olive);
+  background-color: var(--light-olive);
+}
+#Home .div7:hover .div7-container .div7-bottom-container button i {
+  color: var(--olive);
 }
 #Home .div8 {
   grid-area: 3/5/4/9;
@@ -464,11 +513,149 @@ main {
   height: 2rem;
   width: 2rem;
   border-radius: 50%;
-  border: 2px solid var(--gray);
-  background-color: var(--nandor);
+  border: 2px solid var(--light-gray);
+  background-color: var(--lightest-gray);
 }
 #Home .div8 .div8-container .div8-bottom-container button i {
+  color: var(--light-gray);
+}
+#Home .div8:hover .div8-container .div8-bottom-container button {
+  border: 2px solid var(--olive);
+  background-color: var(--light-olive);
+}
+#Home .div8:hover .div8-container .div8-bottom-container button i {
+  color: var(--olive);
+}
+
+#About {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 14px;
+  grid-row-gap: 14px;
+  margin-top: 5.5rem;
+  height: 70vh;
+  width: 90%;
+}
+#About .div1 {
+  grid-area: 1/1/2/7;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+#About .div1 .div1-large-text {
+  font-size: 6rem;
+  font-weight: 700;
+  color: rgba(138, 138, 138, 0.4);
+}
+#About .div2 {
+  grid-area: 2/1/4/4;
+  border-radius: 16px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 1rem;
+  background-color: var(--foggy-gray);
+}
+#About .div2 h2 {
+  font-weight: 600;
+  color: var(--ebony);
+  padding-bottom: 0.1rem;
+}
+#About .div2 .div2-text-spacer {
+  padding: 0.2em 0em;
+}
+#About .div2 .div2-text-spacer h4 {
+  font-weight: 400;
+  color: var(--ebony-clay);
+  line-height: 1.2em;
+}
+#About .div2 .div2-text-spacer h4 .fa-chess, #About .div2 .div2-text-spacer h4 .fa-dumbbell, #About .div2 .div2-text-spacer h4 .fa-paintbrush {
+  color: var(--light-gray);
+  font-size: 0.8rem;
+}
+#About .div3 {
+  grid-area: 2/4/4/7;
+  border-radius: 16px;
+  display: flex;
+  align-items: flex-start;
+  background-color: var(--foggy-gray);
+  padding: 1rem;
+}
+#About .div3 .div3-container {
+  width: 100%;
+  height: 100%;
+  line-height: 2rem;
+}
+#About .div3 .div3-container h2 {
+  font-weight: 600;
+  color: var(--ebony);
+}
+#About .div3 .div3-container h4 {
+  line-height: normal;
+  font-weight: 500;
+  color: var(--ebony-clay);
+  text-align: center;
+}
+#About .div3 .div3-container .div3-programming {
+  width: 100%;
+  height: 35%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #60C689;
+}
+#About .div3 .div3-container .div3-programming i {
+  font-size: 2.5rem;
   color: var(--gray);
+}
+#About .div3 .div3-container .div3-programming .csharp-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#About .div3 .div3-container .div3-programming .csharp-container img {
+  width: 3rem;
+  filter: invert(23%) sepia(0%) saturate(1809%) hue-rotate(141deg) brightness(94%) contrast(72%);
+}
+#About .div3 .div3-container .div3-design {
+  @import url(https://fonts.googleapis.com/css?family=Lato:700);
+  width: 100%;
+  height: 35%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#About .div3 .div3-container .div3-design i {
+  font-size: 2.5rem;
+  color: var(--gray);
+}
+#About .div3 .div3-container .div3-design .photoshop {
+  background-color: var(--gray);
+  width: 2.5em;
+  height: 2.5em;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#About .div3 .div3-container .div3-design .photoshop .photoshop-letters {
+  font-family: "Lato", sans-serif;
+  text-transform: none;
+  font-size: 1.2em;
+  color: var(--pearl-blush);
+}
+#About .div4 {
+  grid-area: 4/1/5/4;
+  border-radius: 16px;
+  display: flex;
+  background-color: var(--foggy-gray);
+}
+#About .div5 {
+  grid-area: 4/4/5/7;
+  border-radius: 16px;
+  display: flex;
+  background-color: var(--foggy-gray);
 }
 
 #footer {
@@ -494,6 +681,24 @@ main {
 }
 #footer .footer-socials ul li a {
   color: var(--gray);
+}
+#footer .footer-socials ul li:hover:nth-child(1) a {
+  color: #0072b1;
+}
+#footer .footer-socials ul li:hover:nth-child(2) a {
+  color: black;
+}
+#footer .footer-socials ul li:hover:nth-child(3) a {
+  color: #1DA1F2;
+}
+#footer .footer-socials ul li:hover:nth-child(4) a {
+  color: rgb(10, 10, 10);
+}
+#footer .footer-socials ul li:hover:nth-child(5) a {
+  color: #053eff;
+}
+#footer .footer-socials ul li:hover:nth-child(6) a {
+  color: #ea4c89;
 }
 #footer .footer-info {
   height: 40%;

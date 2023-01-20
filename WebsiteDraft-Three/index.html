@@ -12,7 +12,6 @@
     <title>Brandon's Portfolio</title>
 </head>
 <body>
-    <div class="cursor"></div>
     <header id="header">
         <nav id="navigation">
             <div class="nav-logo">
@@ -22,8 +21,8 @@
                 <ul class="tab">
                     <li><button id="defaultOpen" class="tablinks" onclick="openTab(event, 'Home')">Home</button></li>
                     <li><button class="tablinks" onclick="openTab(event, 'Works')">Works</button></li>
-                    <li><button class="tablinks" onclick="openTab(event, 'About')">About</button></li>
-                    <li><button class="tablinks" onclick="openTab(event, 'Resume')">Resume</button></li>
+                    <li><button id="aboutOpen" class="tablinks" onclick="openTab(event, 'About')">About</button></li>
+                    <li><button id="resumeOpen" class="tablinks" onclick="openTab(event, 'Resume')">Resume</button></li>
                 </ul>
             </div>
             <div class="nav-cv-button">
@@ -34,25 +33,25 @@
     <main>
         <section id="Home" class="tabcontent">
             <div class="div1 hover-shadow">
-                <div class="div1-container">
+                <div id="meTab" class="div1-container" onclick="myInfoTab()">
                     <img src="/WebsiteDraft-Three/resources/Images/BrandonMeMoji.svg" alt="Memoji" />
                     <h2>Hello, I'm Brandon</h2>
-                    <div class="div1-bottom-container">
-                        <h4>Frontend Developer & Experience Designer</h4>
+                    <div class="div1-bottom-container div-hover">
+                        <h4>Frontend Web & App Developer</h4>
                         <div class="div1-button-container">
-                            <button class="div1-button"><i class="fa-solid fa-arrow-right"></i></button>
+                            <button class="button-hover"><i class="fa-solid fa-arrow-right"></i></button>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="div2 hover-shadow">
-                <div class="div2-container">
+                <div id="aboutTab" class="div2-container" onclick="aboutTab()">
                     <i class="fa-solid fa-certificate"></i>
                     <h4>Learn more about me</h4>
-                    <div class="div2-bottom-container">
+                    <div class="div2-bottom-container div-hover">
                         <h2>See my resume</h2>
                         <div class="div2-button-container">
-                            <button class="div2-button"><i class="fa-solid fa-arrow-right"></i></button>
+                            <button class="button-hover"><i class="fa-solid fa-arrow-right"></i></button>
                         </div>
                     </div>
                 </div>
@@ -61,10 +60,10 @@
                 <div class="div3-container">
                     
                     <h4>API</h4>
-                    <div class="div3-bottom-container">
+                    <div class="div3-bottom-container div-hover">
                         <h2>DisplayMe</h2>
                         <div class="div3-button-container">
-                            <button class="div3-button"><i class="fa-solid fa-arrow-right"></i></button>
+                            <button class="button-hover"><i class="fa-solid fa-arrow-right"></i></button>
                         </div>
                     </div>
                 </div>
@@ -72,19 +71,19 @@
             <div class="div4 hover-shadow">
                 <div class="div4-container">
                     <h4>Web App</h4>
-                    <div class="div4-bottom-container">
+                    <div class="div4-bottom-container div-hover">
                         <h2>GymAlpha</h2>
                         <div class="div4-button-container">
-                            <button class="div4-button"><i class="fa-solid fa-arrow-right"></i></button>
+                            <button class="button-hover"><i class="fa-solid fa-arrow-right"></i></button>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="div5 hover-shadow">
-                <div class="div5-container">
+                <div onclick="window.open('https://github.com/bautista73', '_blank');" class="div5-container">
                         <div class="div5-button-container">
                             <i class="fa-brands fa-github"></i>
-                            <button class="div4-button"><i class="fa-solid fa-arrow-up"></i></button>
+                            <button class="button-hover"><i class="fa-solid fa-arrow-up"></i></button>
                         </div>
                     </div>
                 </div>
@@ -92,10 +91,10 @@
             <div class="div6 hover-shadow" >
                 <div class="div6-container">
                     <h4>Blog Site</h4>
-                    <div class="div6-bottom-container">
+                    <div class="div6-bottom-container div-hover">
                         <h2>Setupocity</h2>
                         <div class="div6-button-container">
-                            <button class="div6-button"><i class="fa-solid fa-arrow-right"></i></button>
+                            <button class="button-hover"><i class="fa-solid fa-arrow-right"></i></button>
                         </div>
                     </div>
                 </div>
@@ -104,10 +103,10 @@
                 <div class="div7-container">
                     <i class="fa-solid fa-paper-plane"></i>
                     <h4>Let's work together</h4>
-                    <div class="div7-bottom-container">
+                    <div class="div7-bottom-container div-hover">
                         <h2>Contact me directly</h2>
                         <div class="div7-button-container">
-                            <button class="div7-button"><i class="fa-solid fa-arrow-right"></i></button>
+                            <button class="button-hover"><i class="fa-solid fa-arrow-right"></i></button>
                         </div>
                     </div>
                 </div>
@@ -115,7 +114,7 @@
             <div class="div8 hover-shadow">
                 <div class="div8-container">
                     <h4>What I do</h4>
-                    <div class="div8-bottom-container">
+                    <div class="div8-bottom-container div-hover">
                         <div class="icons-text">
                             <div class="h-i-group icons-text-1">
                                 <i class="fa-solid fa-code"></i>
@@ -130,7 +129,7 @@
                                 <h2>Design</h2>
                             </div>
                             <div class="div8-button-container">
-                                <button class="div8-button"><i class="fa-solid fa-arrow-right"></i></button>
+                                <button class="button-hover"><i class="fa-solid fa-arrow-right"></i></button>
                             </div>
                         </div>
                     </div>
@@ -141,7 +140,50 @@
 
         </section>
         <section id="About" class="tabcontent">
+            <div class="div1">
+                <span class="div1-large-text">About Me</span>
+            </div> 
+            <div class="div2">
+                <div class="div2-containter">
+                    <h2>About me</h2>
+                    <div class="div2-text-spacer">
+                        <h4>Welcome! I'm Brandon Bautista, a frontend focused, web and app developer. I'm dedicated to the art of bringing a project to life, from crafting clean code to designing visually aesthetic projects, all while ensuring that usability remains a top priority.</h4>
+                    </div>
+                    <div class="div2-text-spacer">   
+                        <h4>After studying business in college and freelancing in digital marketing, I was curious about what goes on behind the scenes of web builders. I was immediately captivated by the world of coding and it has since become a passion for me.</h4> 
+                    </div>
+                    <div class="div2-text-spacer">
+                        <h4>In my free time, I enjoy exploring new design trends,hitting the iron jungle, and improving my chess game <i class="fa-solid fa-chess"></i></h4>
+                    </div>
+                </div>
+            </div> 
+            <div class="div3">
+                <div class="div3-container">
+                    <h2>Technologies I use</h2>
+                    
+                    <div class="div3-programming">
+                        <i class="fa-brands fa-node-js"></i>
+                        <div class="csharp-container">
+                            <img src="/WebsiteDraft-Three/resources/Images/Csharpblacks.svg">
+                        </div>
+                        <i class="fa-brands fa-react"></i>
+                        <i class="fa-brands fa-sass"></i>
+                    </div>
+                    
+                    <div class="div3-design">
+                        <i class="fa-brands fa-figma"></i>
+                        <i class="fa-brands fa-sketch"></i>
+                        <div class="photoshop">
+                            <span class="photoshop-letters">Ps</span>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <div class="div4">
+            </div> 
+            <div class="div5">
 
+            </div> 
         </section>
         <section id="Resume" class="tabcontent">
 
@@ -150,12 +192,12 @@
     <footer id="footer">
         <div class="footer-socials">
             <ul>
-                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-codepen"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-behance"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-dribbble"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/b-bautista/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                <li><a href="https://github.com/bautista73" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                <li><a href="https://twitter.com/devbsquared" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="https://codepen.io/bautista73" target="_blank"><i class="fa-brands fa-codepen"></i></a></li>
+                <li><a href="https://www.behance.net/brandonbautista4" target="_blank"><i class="fa-brands fa-behance"></i></a></li>
+                <li><a href="https://dribbble.com/bbautista73" target="_blank"><i class="fa-brands fa-dribbble"></i></a></li>
             </ul>
         </div>
         <div class="footer-info">

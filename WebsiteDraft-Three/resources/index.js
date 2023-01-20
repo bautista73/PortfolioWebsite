@@ -1,30 +1,8 @@
-// Cursor
+require("@babel/core").transform("code", {
+    presets: ["@babel/preset-env"],
+  });
 
-const cursor = document.querySelector(".cursor");
-
-function getDimensions(e) {
-  cursor.style.top = `${e.clientY - 10}px`; 
-  cursor.style.left = `${e.clientX - 10}px`;
-}
-const delay = 250;
-
-function throttle(callback, limit) {
-  let wait = false;
-  return function () {
-    if (!wait) {
-      callback.apply(null, arguments);
-      wait = true;
-      setTimeout(function () {
-        wait = false;
-      }, limit);
-    }
-  };
-}
-
-window.addEventListener("mousemove", (e) => {
-  throttle(getDimensions(e), delay);
-});
-
+// tab JS
 function openTab(evt, tabName) {
     
     var i, tabcontent, tablinks;
@@ -34,7 +12,6 @@ function openTab(evt, tabName) {
       tabcontent[i].style.display = "none";
     }
   
-
     tablinks = document.getElementsByClassName("tablinks");
     for (i = 0; i < tablinks.length; i++) {
       tablinks[i].className = tablinks[i].className.replace(" active", "");
@@ -44,4 +21,19 @@ function openTab(evt, tabName) {
     evt.currentTarget.className += " active";
   }
 
-  document.getElementById("defaultOpen").click();
+function aboutTab() {
+    document.getElementById('resumeOpen').click();
+}
+function myInfoTab(){
+    document.getElementById('aboutOpen').click();
+}
+
+document.getElementById("defaultOpen").click();
+
+document.querySelector('.cv-button').onmousemove = (e) => {
+    const x = e.pageX - e.target.offsetLeft
+    const y = e.pageY - e.target.offsetTop
+
+    e.target.style.setProperty('--x', '${ x }px')
+    e.target.style.setProperty('--y', '${ y }px')
+}
