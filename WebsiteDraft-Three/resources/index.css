@@ -528,6 +528,46 @@ main {
   color: var(--olive);
 }
 
+#Works {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 14px;
+  grid-row-gap: 14px;
+  margin-top: 5.5rem;
+  height: 70vh;
+  width: 90%;
+}
+#Works .div1 {
+  grid-area: 1/1/2/7;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+#Works .div1 .div1-large-text {
+  font-size: 6rem;
+  font-weight: 700;
+  color: rgba(138, 138, 138, 0.4);
+}
+#Works .div2 {
+  grid-area: 3/1/4/3;
+}
+#Works .div3 {
+  grid-area: 3/3/4/5;
+}
+#Works .div4 {
+  grid-area: 3/5/4/7;
+}
+#Works .div5 {
+  grid-area: 2/1/3/5;
+}
+#Works .div6 {
+  grid-area: 2/5/3/7;
+}
+#Works .div7 {
+  grid-area: 4/1/5/7;
+}
+
 #About {
   display: grid;
   grid-template-columns: repeat(6, 1fr);

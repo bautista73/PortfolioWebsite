@@ -24,4 +24,4 @@ function myInfoTab(){
     document.getElementById('aboutOpen').click();
 }
 
-document.getElementById("aboutOpen").click(); // change this
+document.getElementById("defaultOpen").click(); // change this
