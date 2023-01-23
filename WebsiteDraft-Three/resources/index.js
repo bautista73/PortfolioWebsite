@@ -28,4 +28,8 @@ function myWorksTab(){
   document.getElementById('worksOpen').click();
 }
 
-document.getElementById("resumeOpen").click(); // change this
+function contactTab(){
+  document.getElementById('contactOpen').click();
+}
+
+document.getElementById("defaultOpen").click(); // change this
