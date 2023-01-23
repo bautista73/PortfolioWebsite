@@ -20,7 +20,7 @@
             <div class="nav-items">
                 <ul class="tab">
                     <li><button id="defaultOpen" class="tablinks" onclick="openTab(event, 'Home')">Home</button></li>
-                    <li><button class="tablinks" onclick="openTab(event, 'Works')">Works</button></li>
+                    <li><button id="worksOpen" class="tablinks" onclick="openTab(event, 'Works')">Works</button></li>
                     <li><button id="aboutOpen" class="tablinks" onclick="openTab(event, 'About')">About</button></li>
                     <li><button id="resumeOpen" class="tablinks" onclick="openTab(event, 'Resume')">Resume</button></li>
                 </ul>
@@ -31,6 +31,7 @@
         </nav>
     </header>
     <main>
+        <!--Home-->
         <section id="Home" class="tabcontent">
             <div class="div1 animate pop">
                 <div id="meTab" class="div1-container hover-shadow" onclick="myInfoTab()">
@@ -135,6 +136,7 @@
                 </div>
             </div>
         </section>
+        <!--Works-->
         <section id="Works" class="tabcontent">
             <div class="div1">
                 <span class="div1-large-text animate-large">Works</span>
@@ -142,9 +144,9 @@
             <div class="div2 animate pop">
                 <div class="div2-container hover-shadow">
                     <h4>Web App</h4>
-                    <div class="div4-bottom-container div-hover">
+                    <div class="div2-bottom-container div-hover">
                         <h2>GymAlpha</h2>
-                        <div class="div4-button-container">
+                        <div class="div2-button-container">
                             <button class="button-hover"><i class="fa-solid fa-arrow-right"></i></button>
                         </div>
                     </div>
@@ -153,9 +155,9 @@
             <div class="div3 animate pop">
                 <div class="div3-container hover-shadow">
                     <h4>Web App</h4>
-                    <div class="div4-bottom-container div-hover">
+                    <div class="div3-bottom-container div-hover">
                         <h2>GymAlpha</h2>
-                        <div class="div4-button-container">
+                        <div class="div3-button-container">
                             <button class="button-hover"><i class="fa-solid fa-arrow-right"></i></button>
                         </div>
                     </div>
@@ -206,6 +208,7 @@
                 </div>
             </div>
         </section>
+        <!--About-->
         <section id="About" class="tabcontent">
             <div class="div1">
                 <span class="div1-large-text animate-large">About Me</span>
@@ -258,6 +261,7 @@
                 </div>
             </div> 
         </section>
+        <!--Resume-->
         <section id="Resume" class="tabcontent">
 
         </section>
