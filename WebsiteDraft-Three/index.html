@@ -26,7 +26,7 @@
                 </ul>
             </div>
             <div class="nav-cv-button">
-                <button class="cv-button">Download CV</button>
+                <button id="contactOpen" class="tablinks cv-button" onclick="openTab(event, 'Contact')">Contact Me</button>
             </div>
         </nav>
     </header>
@@ -263,116 +263,161 @@
         </section>
         <!--Resume-->
         <section id="Resume" class="tabcontent">
-            <div class="div1">
-                <div class="resume-about-container">
-                    <div class="resume-about">
-                        <img src="/WebsiteDraft-Three/resources/Images/BrandonMeMoji.svg" alt="Memoji" />
-                        <h2>Brandon Bautista</h2>
-                        <h3>Frontend Developer</h3>
-                        <span class="resume-about-url">contact@brandon-bautista.com</span>
-                        <span class="resume-about-url">www.brandon-bautista.com</span>
-                        <button class="resume-about-contact">Contact Me</button>
-                    </div>
-                </div>
-            </div>
-            <div class="div2">
-                <div class="resume-links-container">
-                    <div class="resume-links">
-                        <div class="resume-links-group rlg-1">
-                            <span class="resume-links-text">LinkedIn</span>
-                            <button class="button-hover"><i class="fa-solid fa-arrow-right"></i></button>
-                        </div>
-                        <div class="resume-links-group rlg-2">
-                            <span class="resume-links-text">GitHub</span>
-                            <button class="button-hover"><i class="fa-solid fa-arrow-right"></i></button>
-                        </div>
-                        <div class="resume-links-group rlg-3">
-                            <span class="resume-links-text">Twitter</span>
-                            <button class="button-hover"><i class="fa-solid fa-arrow-right"></i></button>
-                        </div>
-                        <div class="resume-links-group rlg-4">
-                            <span class="resume-links-text">Credly</span>
-                            <button class="button-hover"><i class="fa-solid fa-arrow-right"></i></button>
+            <div class="resume-grid-wrapper">
+                <div class="div1 animate pop">
+                    <div class="resume-about-container">
+                        <div class="resume-about">
+                            <img src="/WebsiteDraft-Three/resources/Images/BrandonMeMoji.svg" alt="Memoji" />
+                            <h2>Brandon Bautista</h2>
+                            <h3>Frontend Developer</h3>
+                            <span class="resume-about-url">contact@brandon-bautista.com</span>
+                            <span class="resume-about-url">www.brandon-bautista.com</span>
+                            <button class="resume-about-contact">Contact Me</button>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="div4">
-                <div class="div4-scroll-container">
-                    <div class="resume-summary">
-                        <h3>Summary</h3>
-                        <p>Highly motivated and eager to begin my career as a Frontend Developer. Recently completed a software development bootcamp where I gained hands-on experience in HTML, CSS, JavaScript, and other web development technologies. Strong problem-solving skills and a passion for creating visually appealing and user-friendly websites.
-                        </p>
-                    </div>
-                    <div class="resume-experience">
-                        <h3>Experience</h3>
-                        <div class="resume-experience-wrapper">
-                            <div class="experience-block block-1">
-                                <h4>NexusMD</h4>
-                                <p>A native application designed to help medical practices manage patient information, appointments, and medical records. It features secure login for staff and patients, appointment scheduling and reminders, electronic medical records, plus insurance and billing information. Technologies used include React.js, C#, and MongoDB.<p>
-                            </div><br>
-                            <div class="experience-block block-2">
-                                <h4>GymAlpha</h4>
-                                <p>A web and mobile application that helps weightlifters track their progress and reach their fitness goals. It features workout tracking, progress monitoring, and personalized workout plans. Users can log the weight and reps of each exercise and track their progress over time. It uses React.js, Node.js and MongoDB.</p>
-                            </div><br>
-                            <div class="experience-block block-3">
-                                <h4>Contempo Design</h4>
-                                <p>A web-based application that serves as my personal system of guidelines, components, and tools for designing intuitive, modern, and responsive user interfaces. It is heavily inspired by some of the best practices of user interface design from industry leaders such as Apple Developer, Base Web, and Material UI. Technologies used include React.js, Node.js, and Wordpress.</p>
+                <div class="div2 animate pop">
+                    <div class="resume-links-container">
+                        <div class="resume-links">
+                            <div onclick="window.open('https://www.linkedin.com/in/b-bautista/', '_blank');" class="resume-links-group rlg-1">
+                                <span class="resume-links-text">LinkedIn</span>
+                                <button class="button-hover"><i class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+                            <div onclick="window.open('https://github.com/bautista73', '_blank');" class="resume-links-group rlg-2">
+                                <span class="resume-links-text">GitHub</span>
+                                <button class="button-hover"><i class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+                            <div onclick="window.open('https://www.credly.com/users/brandon-bautista.b95fda6c/badges', '_blank');" class="resume-links-group rlg-4">
+                                <span class="resume-links-text">Credly</span>
+                                <button class="button-hover"><i class="fa-solid fa-arrow-right"></i></button>
                             </div>
                         </div>
                     </div>
-                    <div class="resume-education">
-                        <h3>Education</h3>
-                        <div class="resume-edu-1">
-                            <h4>Elevent Fifty Academy</h4>
-                            <h5>Software Development</h5>
-                            <span class="resume-dates">2020 - 2021</span>
+                </div>
+                <div class="div4 animate pop">
+                    <div class="div4-scroll-container">
+                        <div class="resume-experience">
+                            <h3>Technical Projects</h3>
+                            <div class="resume-experience-wrapper">
+                                <div class="experience-block block-1">
+                                    <h4>NexusMD</h4>
+                                    <p>A native application designed to help medical practices manage patient information, appointments, and medical records. It features secure login for staff and patients, appointment scheduling and reminders, electronic medical records, plus insurance and billing information. Technologies used include React.js, C#, and MongoDB.<p>
+                                </div><br>
+                                <div class="experience-block block-2">
+                                    <h4>GymAlpha</h4>
+                                    <p>A web and mobile application that helps weightlifters track their progress and reach their fitness goals. It features workout tracking, progress monitoring, and personalized workout plans. Users can log the weight and reps of each exercise and track their progress over time. It uses React.js, Node.js and MongoDB.</p>
+                                </div><br>
+                                <div class="experience-block block-3">
+                                    <h4>Contempo Design</h4>
+                                    <p>A web-based application that serves as my personal system of guidelines, components, and tools for designing intuitive, modern, and responsive user interfaces. It is heavily inspired by some of the best practices of user interface design from industry leaders such as Apple Developer, Base Web, and Material UI. Technologies used include React.js, Node.js, and Wordpress.</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="resume-edu-2">
-                            <h4>Cascadia College</h4>
-                            <h5>Business Administration</h5>
-                            <span class="resume-dates">2016 - 2019</span>
+                        <div class="resume-education">
+                            <h3>Education</h3>
+                            <div class="resume-edu-1">
+                                <h4>Elevent Fifty Academy</h4>
+                                <h5>Software Development</h5>
+                                <span class="resume-dates">2020 - 2021</span>
+                            </div>
+                            <div class="resume-edu-2">
+                                <h4>Cascadia College</h4>
+                                <h5>Business Administration</h5>
+                                <span class="resume-dates">2016 - 2019</span>
+                            </div>
                         </div>
+                        <div class="resume-skills">
+                            <h3>Skills</h3>
+                            <div class="skills-pl">
+                                <h4>Programming Languages</h4>
+                                <ul>
+                                    <li>JavaScript</li>
+                                    <li>TypeScript</li>
+                                    <li>C#</li>
+                                    <li>HTML & Razor</li>
+                                    <li>CSS/Sass</li>
+                                </ul>
+                            </div>
+                            <div class="skills-lb-fw">
+                                <h4>Libraries & Frameworks</h4>
+                                <ul>
+                                    <li>React</li>
+                                    <li>jQuery</li>
+                                    <li>Node.js</li>
+                                    <li>.Net</li>
+                                    <li>Bootstrap</li>
+                                </ul>
+                            </div>
+                            <div class="skills-desgn">
+                                <h4>Design</h4>
+                                <ul>
+                                    <li>Figma</li>
+                                    <li>Photoshop</li>
+                                    <li>Illustrator</li>
+                                    <li>Sketch</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- <div class="resume-interests">
+                            <ul>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div> -->
                     </div>
-                    <div class="resume-skills">
-                        <h3>Skills</h3>
-                        <div class="skills-pl">
-                            <h4>Programming Languages</h4>
-                            <ul>
-                                <li>JavaScript</li>
-                                <li>TypeScript</li>
-                                <li>C#</li>
-                                <li>HTML & Razor</li>
-                                <li>CSS/Sass</li>
-                            </ul>
-                        </div>
-                        <div class="skills-lb-fw">
-                            <h4>Libraries & Frameworks</h4>
-                            <ul>
-                                <li>React</li>
-                                <li>jQuery</li>
-                                <li>Node.js</li>
-                                <li>.Net</li>
-                                <li>Bootstrap</li>
-                            </ul>
-                        </div>
-                        <div class="skills-desgn">
-                            <h4>Design</h4>
-                            <ul>
-                                <li>Figma</li>
-                                <li>Photoshop</li>
-                                <li>Illustrator</li>
-                                <li>Sketch</li>
-                            </ul>
-                        </div>
+                </div>
+            </div>
+        </section>
+        <!--Contact-->
+        <section id="Contact" class="tabcontent">
+            <div class="div1">
+                <div class="div1-container">
+                    <div class="contact-me-wrapper">
+                        <h2>Contact Me</h2>
+                        <i class="fa-solid fa-paper-plane"></i>
                     </div>
-                    <!-- <div class="resume-interests">
-                        <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                    </div> -->
+                    <h4>I am open to job opportunities and projects, please don't hesitate to contact me for any further information or inquiries</h4>
+                    <div class="contact-c-wrapper">
+                        <span>Want to call?</span>
+                        <span>Email me to schedule a call</span>
+                    </div>
+                    <div class="contact-c-wrapper">
+                        <span>Want to email?</span>
+                        <span>contact@brandon-bautista.com</span>
+                    </div>
+                </div>
+            </div>
+            <div class="div2 animate pop">
+                <div class="div2-wrapper">
+                    <form class="cf">
+                        <input type="text" id="input-name" placeholder="Name">
+                        <input type="email" id="input-email" placeholder="Email">
+                        <input type="text" id="input-subject" placeholder="Subject">
+                        <textarea name="message" type="text" id="input-message" placeholder="Type your message"></textarea>
+                        <input type="submit" value="Submit" id="input-submit">
+                    </form>
+                </div>
+            </div>
+            <div class="div3 animate pop">
+                <div class="div3-container">
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Software Developement</h2>
+                    <h4>Experienced in OOP & Functional Programming, languages include: JavaScript, TypeScript, C#</h4>
+                </div>
+            </div>
+            <div class="div4 animate pop">
+                <div class="div4-container">
+                    <i class="fa-solid fa-compass-drafting"></i>
+                    <h2>Frontend Developement</h2>
+                    <h4>Passionate about UI/UX and styling. Experienced with HTML, SCSS, JS, and React</h4>
+                </div>
+            </div>
+            <div class="div5 animate pop">
+                <div class="div5-container">
+                    <i class="fa-solid fa-swatchbook"></i>
+                    <h2>Design & Creativity</h2>
+                    <h4>Devoted to creation and crafting beautiful products. Skilled with Photoshop, Figma, Sketch and Illustrator</h4>
                 </div>
             </div>
         </section>
