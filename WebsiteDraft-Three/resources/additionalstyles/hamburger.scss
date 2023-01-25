@@ -53,42 +53,63 @@
 	transform:translateY(-200%) rotate(135deg) !important;
 }
 
-.menuppal.is_active{
+.menuppal.is_active {
   transform: translate3d(0px, 0px, 0px);
 }
-.menuppal{
-    background-color: #ccc5b9;
-    bottom: 0;
-    height: 60%;
-    left: 0;
-    overflow-y: scroll;
+.menuppal {
     position: fixed;
+    bottom: 0;
+    height: 20rem;
     top: 0;
+    left: 0;
+    background-color: #ccc5b9;
     transform: translate3d(0px, -100%, 0px);
     transition: transform 0.35s cubic-bezier(0.05, 1.04, 0.72, 0.98) 0s;
     width: 100%;
     z-index: 1001;
+    background-color: rgba(204, 197, 185, 0.75);
+    backdrop-filter: blur(5px);
         ul {
-            margin:0;padding:0;
-            li { 
+            margin-top: 2rem;
+
+            li {
+                text-align: center;
+                padding: 1rem;
                 list-style: none;
-                text-align:center;
-                font-family: Verdadna, Arial, Helvetica;
-                color: green;
-                font-size:1.5rem;
-                line-height:3em;
-                height:3em;
                 color:#369;
                 text-transform:none;
                 font-weight:bold;
-                    a {
+                    button {
                         text-decoration:none;
-                        color:#369;
-                            :hover{
+                        background: none;
+                        border: none;
+                        font-size: 1rem;
+                        font-weight: 500;
+                        color: #4b4b4b;
+                            &:hover {
                                 text-decoration:none;
-                                color:#333;
+                                color: black;
                             }
                     }
+            }
+        }
+        .menuppal-button {
+            margin: 1rem auto auto auto;
+            text-align: center;
+            button {
+                background-color: #4b4b4b;
+                color: #fffcf2;
+                padding: .7rem;
+                width: 10rem;
+                border-radius: 20px;
+                border-style: none;
+                font-size: 1rem;
+                font-weight: 500;
+                transition:all .3s ease-in-out;
+                &:hover {
+                    background: #588157;
+                    color: #fffcf2;
+                }     
             }
         }
 }

@@ -44,12 +44,3 @@ function toggleMenu (event) {
 }
 
 menu.addEventListener('click', toggleMenu, false);
-
-// function myFunction() {
-//   var x = document.getElementById("navigation");
-//   if (x.className === "topnav") {
-//     x.className += " responsive";
-//   } else {
-//     x.className = "topnav";
-//   }
-// }

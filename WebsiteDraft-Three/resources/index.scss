@@ -57,9 +57,14 @@
   @media only screen and (max-width: 800px) {
     body {
         #header {
+            position: sticky;
+            height: 4rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            padding: 0 0.5rem;
+            background-color: rgba(204, 197, 185, 0.75);
+            backdrop-filter: blur(5px);
             .hamburger-wrapper {
                 display: flex;
             }
@@ -82,8 +87,7 @@
             & .div5 { grid-area: 5 / 1 / 6 / 2; } 
             & .div6 { grid-area: 6 / 1 / 7 / 2; } 
             & .div7 { grid-area: 7 / 1 / 8 / 2; } 
-            & .div8 { 
-                grid-area: 8 / 1 / 9 / 2; } 
+            & .div8 { grid-area: 8 / 1 / 9 / 2; } 
         }
         #Works {
 
@@ -138,7 +142,6 @@
             width: 30%;     
             & img {
                 width: 1.5rem;
-                // filter: invert(48%) sepia(11%) saturate(1220%) hue-rotate(70deg) brightness(93%) contrast(86%);
                 filter: invert(80%);
             }
         }
