@@ -13,9 +13,9 @@
 </head>
 <body>
     <header id="header">
-        <nav id="navigation">
+        <nav id="navigation" class="topnav">
             <div class="nav-logo">
-                <img src="/WebsiteDraft-Three/resources/Images/b2c.png" />
+                <img src="/WebsiteDraft-Three/resources/Images/b2c.png" onclick="openTab(event, 'Home')"/>
             </div>
             <div class="nav-items">
                 <ul class="tab">
@@ -29,21 +29,28 @@
                 <button id="contactOpen" class="tablinks cv-button" onclick="openTab(event, 'Contact')">Contact Me</button>
             </div>
             <!-- used for smaller screens -->
-            <div id="hamburger">
-                <div class="line" id="one"></div>
-                <div class="line" id="two"></div>
-                <div class="line" id="three"></div>
-            </div>
-            <div class="mobile-menu">
-                <ul class="mobile-menu__items">
-                  <li><a href="javascript:;">HOME</a></li>
-                  <li><a href="javascript:;">ABOUT</a></li>
-                  <li><a href="javascript:;">CONTACT</a></li>
-                  <li><a href="javascript:;">FAQ</a></li>
-                </ul>
-              </div>
+
+            <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()"> -->
+
+            <!-- </a> -->
+
             <!-- end smaller nav -->
         </nav>
+        <div class="hamburger-wrapper">
+            <div class="hamburger">
+                <div class="_layer -top"></div>
+                <div class="_layer -mid"></div>
+                <div class="_layer -bottom"></div>
+            </div>
+            <div class="menuppal">
+                <ul class="tab">
+                    <li><button id="defaultOpen" class="tablinks" onclick="openTab(event, 'Home')">Home</button></li>
+                    <li><button id="worksOpen" class="tablinks" onclick="openTab(event, 'Works')">Works</button></li>
+                    <li><button id="aboutOpen" class="tablinks" onclick="openTab(event, 'About')">About</button></li>
+                    <li><button id="resumeOpen" class="tablinks" onclick="openTab(event, 'Resume')">Resume</button></li>
+                </ul>
+            </div>
+        </div>
     </header>
     <main>
         <!--Home-->

@@ -34,7 +34,22 @@ function contactTab(){
 
 document.getElementById("defaultOpen").click(); // change this
 
-document.getElementById("hamburger").addEventListener("click", function(){
-  this.classList.toggle("active");
-  document.querySelector(".mobile-menu").classList.toggle("active");
-});
+var menu = document.querySelector('.hamburger');
+
+// hamburger JS
+function toggleMenu (event) {
+  this.classList.toggle('is-active');
+  document.querySelector( ".menuppal" ).classList.toggle("is_active");
+  event.preventDefault();
+}
+
+menu.addEventListener('click', toggleMenu, false);
+
+// function myFunction() {
+//   var x = document.getElementById("navigation");
+//   if (x.className === "topnav") {
+//     x.className += " responsive";
+//   } else {
+//     x.className = "topnav";
+//   }
+// }
