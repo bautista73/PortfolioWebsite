@@ -25,6 +25,10 @@
   --pearl-blush: #fffcf2;
 }
 
+html::-webkit-scrollbar {
+  display: none;
+}
+
 *, *::after, *::before {
   margin: 0;
   padding: 0;
@@ -49,7 +53,7 @@ body {
     width: 100%;
   }
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (min-width: 601px) and (max-width: 800px) {
   body h2 {
     font-size: 2.1rem;
   }
@@ -64,7 +68,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0 0.5rem;
-    background-color: rgba(204, 197, 185, 0.75);
+    background-color: rgba(204, 197, 185, 0.8);
     -webkit-backdrop-filter: blur(5px);
             backdrop-filter: blur(5px);
   }
@@ -308,6 +312,374 @@ body {
     padding: 1rem;
   }
 }
+@media only screen and (max-width: 600px) {
+  body {
+    width: 90%;
+    min-width: 0;
+    margin: auto;
+  }
+  body #header {
+    position: -webkit-sticky;
+    position: sticky;
+    height: 4rem;
+    width: 100%;
+    display: flex;
+    padding: 0 1rem;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(204, 197, 185, 0.95);
+    -webkit-backdrop-filter: blur(50px);
+            backdrop-filter: blur(50px);
+  }
+  body #header .hamburger-wrapper {
+    display: flex;
+  }
+  body #header #navigation {
+    display: flex;
+    justify-content: flex-start;
+  }
+  body #header #navigation #nav-items-check {
+    display: none;
+  }
+  body #header #navigation .nav-cv-button {
+    display: none;
+  }
+  body #Home {
+    position: relative;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    height: 130rem;
+    width: 100%;
+  }
+  body #Home .div1 {
+    grid-area: 1/1/2/2;
+  }
+  body #Home .div2 {
+    grid-area: 2/1/3/2;
+  }
+  body #Home .div2 .div2-container .fa-certificate {
+    font-size: 3rem;
+  }
+  body #Home .div3 {
+    grid-area: 3/1/4/2;
+  }
+  body #Home .div4 {
+    grid-area: 4/1/5/2;
+  }
+  body #Home .div5 {
+    grid-area: 5/1/6/2;
+  }
+  body #Home .div5 .div5-container .div5-button-container .fa-github {
+    font-size: 10rem;
+  }
+  body #Home .div6 {
+    grid-area: 6/1/7/2;
+  }
+  body #Home .div7 {
+    grid-area: 7/1/8/2;
+  }
+  body #Home .div7 .div7-container .fa-paper-plane {
+    font-size: 2.8rem;
+  }
+  body #Home .div8 {
+    grid-area: 8/1/9/2;
+  }
+  body #Home .div8 .div8-container {
+    padding: 1rem;
+    line-height: 2rem;
+    width: 100%;
+    height: 100%;
+  }
+  body #Home .div8 .div8-container h4 {
+    font-weight: 500;
+    color: var(--ebony-clay);
+  }
+  body #Home .div8 .div8-container .div8-bottom-container {
+    width: 100%;
+    height: 100%;
+  }
+  body #Home .div8 .div8-container .div8-bottom-container .icons-text {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  body #Home .div8 .div8-container .div8-bottom-container .icons-text .h-i-group {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  body #Home .div8 .div8-container .div8-bottom-container .icons-text .h-i-group .d8-fa-group {
+    width: 3rem;
+  }
+  body #Home .div8 .div8-container .div8-bottom-container .icons-text .h-i-group h2 {
+    font-weight: 600;
+    color: var(--ebony-clay);
+  }
+  body #Home .div8 .div8-container .div8-bottom-container .icons-text .h-i-group i {
+    padding-top: 0.5rem;
+    padding-right: 1rem;
+    font-size: 1.6rem;
+    color: var(--olive);
+  }
+  body #Home .div8 .div8-container .div8-bottom-container button {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    border: 2px solid var(--light-gray);
+    background-color: var(--lightest-gray);
+  }
+  body #Home .div8 .div8-container .div8-bottom-container button i {
+    color: var(--light-gray);
+  }
+  body #Works {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, 1fr);
+    height: 100rem;
+  }
+  body #Works .div1 {
+    grid-area: 1/1/2/2;
+  }
+  body #Works .div1 .div1-large-text {
+    font-size: 4rem;
+  }
+  body #Works .div2 {
+    grid-area: 2/1/3/2;
+  }
+  body #Works .div3 {
+    grid-area: 3/1/4/2;
+  }
+  body #Works .div4 {
+    grid-area: 4/1/5/2;
+  }
+  body #Works .div5 {
+    grid-area: 5/1/6/2;
+  }
+  body #Works .div6 {
+    grid-area: 6/1/7/2;
+  }
+  body #Works .div7 {
+    grid-area: 7/1/8/2;
+  }
+  body #About {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    width: 50rem;
+    height: 100rem;
+  }
+  body #About .div1 {
+    grid-area: 1/1/2/2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body #About .div1 .div1-large-text {
+    font-size: 4rem;
+  }
+  body #About .div2 {
+    grid-area: 2/1/4/2;
+  }
+  body #About .div2 .div2-text-spacer h4 {
+    line-height: 1.3rem;
+  }
+  body #About .div3 {
+    grid-area: 4/1/5/2;
+  }
+  body #About .div3 .div3-container .div3-programming li .fa-node-js {
+    font-size: 3rem;
+  }
+  body #About .div3 .div3-container .div3-programming li .fa-react {
+    font-size: 3rem;
+  }
+  body #About .div3 .div3-container .div3-programming li .fa-sass {
+    font-size: 2.9rem;
+  }
+  body #About .div3 .div3-container .div3-programming li img {
+    width: 3rem;
+  }
+  body #About .div3 .div3-container .div3-programming .typescript {
+    width: 3em;
+    height: 3em;
+    border-radius: 6px;
+  }
+  body #About .div3 .div3-container .div3-programming .typescript .typescript-letters {
+    font-weight: 500;
+    font-size: 1.4rem;
+  }
+  body #About .div3 .div3-container .div3-design li i {
+    font-size: 3rem;
+  }
+  body #About .div3 .div3-container .div3-design .photoshop {
+    width: 3em;
+    height: 3em;
+    border-radius: 12px;
+  }
+  body #About .div3 .div3-container .div3-design .photoshop .photoshop-letters {
+    font-weight: 500;
+    text-transform: none;
+    font-size: 1.4rem;
+    color: var(--pearl-blush);
+  }
+  body #About .div4 {
+    grid-area: 5/1/6/2;
+  }
+  body #About .div4 .div4-container {
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  body #About .div4 .div4-container h2 {
+    padding-bottom: 1rem;
+  }
+  body #About .div4 .div4-container h4 {
+    font-size: 1.2rem;
+  }
+  body #About .div4 .div4-container .edu-wrapper-1, body #About .div4 .div4-container .edu-wrapper-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  body #About .div4 .div4-container .edu-wrapper-1 .edu-w-name, body #About .div4 .div4-container .edu-wrapper-2 .edu-w-name {
+    color: var(--olive);
+  }
+  body #About .div4 .div4-container .edu-wrapper-1 hr, body #About .div4 .div4-container .edu-wrapper-2 hr {
+    width: 30%;
+  }
+  body #About .div4 .div4-container .edu-wrapper-1 .edu-year, body #About .div4 .div4-container .edu-wrapper-2 .edu-year {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+  }
+  body #Resume {
+    height: 133rem;
+  }
+  body #Resume .resume-grid-wrapper {
+    height: 100rem;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  body #Resume .resume-grid-wrapper .div1 {
+    grid-area: 1/1/2/2;
+  }
+  body #Resume .resume-grid-wrapper .div2 {
+    grid-area: 2/1/3/2;
+  }
+  body #Resume .resume-grid-wrapper .div4 {
+    grid-area: 3/1/4/2;
+  }
+  body #Resume .resume-grid-wrapper .div4 .div4-scroll-container {
+    width: auto;
+  }
+  body #Resume .resume-grid-wrapper .div4 .div4-scroll-container h4 {
+    font-size: 1rem;
+    color: var(--olive);
+  }
+  body #Resume .resume-grid-wrapper .div4 .div4-scroll-container .resume-education h4 {
+    font-size: 1rem;
+    color: var(--olive);
+  }
+  body #Resume .resume-grid-wrapper .div4 .div4-scroll-container .resume-education .resume-edu-wrapper {
+    display: flex;
+    justify-content: flex-start;
+  }
+  body #Resume .resume-grid-wrapper .div4 .div4-scroll-container .resume-education .resume-edu-wrapper .resume-edu-1 {
+    padding-right: 2rem;
+  }
+  body #Resume .resume-grid-wrapper .div4 .div4-scroll-container .resume-skills .resume-skills-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  body #Resume .resume-grid-wrapper .div4 .div4-scroll-container .resume-skills .resume-skills-wrapper .skills-pl {
+    padding-top: 0.5rem;
+  }
+  body #Resume .resume-grid-wrapper .div4 .div4-scroll-container .resume-skills .resume-skills-wrapper .skills-lb-fw {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  body #Contact {
+    height: 100rem;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+  }
+  body #Contact .div1 {
+    grid-area: 1/1/2/2;
+  }
+  body #Contact .div1 h4 {
+    font-size: 1rem;
+  }
+  body #Contact .div2 {
+    grid-area: 2/1/3/2;
+  }
+  body #Contact .div2 .div2-wrapper {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+  }
+  body #Contact .div2 .div2-wrapper .cf {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+  }
+  body #Contact .div2 .div2-wrapper .cf #input-name {
+    grid-area: 1/1/2/2;
+  }
+  body #Contact .div2 .div2-wrapper .cf #input-email {
+    grid-area: 2/1/3/2;
+  }
+  body #Contact .div2 .div2-wrapper .cf #input-subject {
+    grid-area: 3/1/4/2;
+  }
+  body #Contact .div2 .div2-wrapper .cf textarea {
+    grid-area: 4/1/6/2;
+  }
+  body #Contact .div2 .div2-wrapper .cf #input-submit {
+    grid-area: 6/1/7/2;
+  }
+  body #Contact .div3 {
+    grid-area: 3/1/4/2;
+    height: 100%;
+  }
+  body #Contact .div4 {
+    grid-area: 4/1/5/2;
+    height: 100%;
+  }
+  body #Contact .div5 {
+    grid-area: 5/1/6/2;
+    height: 100%;
+  }
+  body #Footer {
+    padding: 1.5rem;
+    width: 100%;
+  }
+  body #Footer .footer-wrapper {
+    width: 100%;
+  }
+  body #Footer .footer-wrapper .footer-socials {
+    width: 100%;
+  }
+  body #Footer .footer-wrapper .footer-socials ul {
+    width: 100%;
+  }
+  body #Footer .footer-wrapper .footer-socials ul li {
+    padding: 0.5rem;
+    font-size: 1.5rem;
+  }
+  body #Footer .footer-wrapper .footer-info {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+}
 main {
   position: relative;
   width: 100%;
@@ -401,7 +773,7 @@ main {
   grid-row-gap: 14px;
   margin-top: 1rem;
   height: 40rem;
-  width: 70rem;
+  max-width: 70rem;
 }
 #Home .div1 {
   grid-area: 1/1/2/5;
@@ -1240,9 +1612,6 @@ main {
 #About .div3 .div3-container .div3-programming .typescript:hover {
   background-color: #007acc;
 }
-#About .div3 .div3-container .div3-programming .typescript:hover .photoshop-letters {
-  color: #70c4ff;
-}
 #About .div3 .div3-container .div3-programming .typescript .typescript-letters {
   padding: 0.2rem;
   font-weight: 500;
@@ -1673,7 +2042,7 @@ main {
   border-radius: 16px;
   display: flex;
   background-color: var(--foggy-gray);
-  height: 80%;
+  height: auto;
 }
 #Contact .div3 .div3-container {
   display: flex;
@@ -1705,7 +2074,7 @@ main {
   border-radius: 16px;
   display: flex;
   background-color: var(--foggy-gray);
-  height: 80%;
+  height: auto;
 }
 #Contact .div4 .div4-container {
   display: flex;
@@ -1737,7 +2106,7 @@ main {
   border-radius: 16px;
   display: flex;
   background-color: var(--foggy-gray);
-  height: 80%;
+  height: auto;
 }
 #Contact .div5 .div5-container {
   display: flex;

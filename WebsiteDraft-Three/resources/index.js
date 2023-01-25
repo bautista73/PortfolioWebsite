@@ -32,7 +32,7 @@ function contactTab(){
   document.getElementById('contactOpen').click();
 }
 
- document.getElementById("resumeOpen").click();// change this
+ document.getElementById("defaultOpen").click();// change this
 
  // hamburger JS
 var menu = document.querySelector('.hamburger');
