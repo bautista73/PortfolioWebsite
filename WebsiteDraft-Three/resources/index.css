@@ -124,6 +124,169 @@ body {
   body #Home .div8 .div8-container .div8-bottom-container .icons-text .h-i-group i {
     font-size: 3rem;
   }
+  body #Works {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, 1fr);
+    height: 100rem;
+  }
+  body #Works .div1 {
+    grid-area: 1/1/2/2;
+  }
+  body #Works .div1 .div1-large-text {
+    font-size: 5rem;
+  }
+  body #Works .div2 {
+    grid-area: 2/1/3/2;
+  }
+  body #Works .div3 {
+    grid-area: 3/1/4/2;
+  }
+  body #Works .div4 {
+    grid-area: 4/1/5/2;
+  }
+  body #Works .div5 {
+    grid-area: 5/1/6/2;
+  }
+  body #Works .div6 {
+    grid-area: 6/1/7/2;
+  }
+  body #Works .div7 {
+    grid-area: 7/1/8/2;
+  }
+  body #About {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    width: 50rem;
+    height: 100rem;
+  }
+  body #About .div1 {
+    grid-area: 1/1/2/2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body #About .div1 .div1-large-text {
+    font-size: 7rem;
+  }
+  body #About .div2 {
+    grid-area: 2/1/4/2;
+  }
+  body #About .div2 .div2-text-spacer h4 {
+    line-height: 2.35rem;
+  }
+  body #About .div3 {
+    grid-area: 4/1/5/2;
+  }
+  body #About .div4 {
+    grid-area: 5/1/6/2;
+  }
+  body #About .div4 .div4-container {
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  body #About .div4 .div4-container h4 {
+    font-size: 1.2rem;
+  }
+  body #Resume {
+    height: 83rem;
+  }
+  body #Resume .resume-grid-wrapper {
+    height: 72rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+  body #Resume .resume-grid-wrapper .div1 {
+    grid-area: 1/1/2/2;
+  }
+  body #Resume .resume-grid-wrapper .div2 {
+    grid-area: 2/1/3/2;
+  }
+  body #Resume .resume-grid-wrapper .div4 {
+    grid-area: 3/1/4/2;
+  }
+  body #Resume .resume-grid-wrapper .div4 .div4-scroll-container h4 {
+    font-size: 1rem;
+    color: var(--olive);
+  }
+  body #Resume .resume-grid-wrapper .div4 .div4-scroll-container .resume-education h4 {
+    font-size: 1rem;
+    color: var(--olive);
+  }
+  body #Resume .resume-grid-wrapper .div4 .div4-scroll-container .resume-education .resume-edu-wrapper {
+    display: flex;
+    justify-content: flex-start;
+  }
+  body #Resume .resume-grid-wrapper .div4 .div4-scroll-container .resume-education .resume-edu-wrapper .resume-edu-1 {
+    padding-right: 2rem;
+  }
+  body #Resume .resume-grid-wrapper .div4 .div4-scroll-container .resume-skills .resume-skills-wrapper {
+    display: flex;
+    justify-content: flex-start;
+  }
+  body #Resume .resume-grid-wrapper .div4 .div4-scroll-container .resume-skills .resume-skills-wrapper .skills-pl {
+    padding-right: 2rem;
+  }
+  body #Resume .resume-grid-wrapper .div4 .div4-scroll-container .resume-skills .resume-skills-wrapper .skills-lb-fw {
+    padding-right: 2rem;
+  }
+  body #Contact {
+    height: 80rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+  }
+  body #Contact .div1 {
+    grid-area: 1/1/2/2;
+  }
+  body #Contact .div1 h4 {
+    font-size: 1.1rem;
+  }
+  body #Contact .div2 {
+    grid-area: 2/1/3/2;
+  }
+  body #Contact .div2 .div2-wrapper {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+  }
+  body #Contact .div2 .div2-wrapper .cf {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+  }
+  body #Contact .div2 .div2-wrapper .cf #input-name {
+    grid-area: 1/1/2/2;
+  }
+  body #Contact .div2 .div2-wrapper .cf #input-email {
+    grid-area: 2/1/3/2;
+  }
+  body #Contact .div2 .div2-wrapper .cf #input-subject {
+    grid-area: 3/1/4/2;
+  }
+  body #Contact .div2 .div2-wrapper .cf textarea {
+    grid-area: 4/1/6/2;
+  }
+  body #Contact .div2 .div2-wrapper .cf #input-submit {
+    grid-area: 6/1/7/2;
+  }
+  body #Contact .div3 {
+    grid-area: 3/1/4/2;
+    height: 100%;
+  }
+  body #Contact .div4 {
+    grid-area: 4/1/5/2;
+    height: 100%;
+  }
+  body #Contact .div5 {
+    grid-area: 5/1/6/2;
+    height: 100%;
+  }
   body #Footer {
     padding: 3rem;
     width: 100%;
@@ -1189,6 +1352,7 @@ main {
   grid-template-rows: repeat(3, 1fr);
   grid-column-gap: 14px;
   grid-row-gap: 14px;
+  height: 50rem;
 }
 #Resume .resume-grid-wrapper h2 {
   font-weight: 600;
@@ -1290,8 +1454,6 @@ main {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  border-radius: 16px;
-  background-color: var(--foggy-gray);
   padding: 1.2rem;
 }
 #Resume .resume-grid-wrapper .div4 .div4-scroll-container {
@@ -1338,7 +1500,13 @@ main {
 }
 #Resume .resume-grid-wrapper .div4 .div4-scroll-container .resume-education .resume-edu-wrapper {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-start;
+}
+#Resume .resume-grid-wrapper .div4 .div4-scroll-container .resume-education .resume-edu-wrapper h4 {
+  color: var(--olive);
+}
+#Resume .resume-grid-wrapper .div4 .div4-scroll-container .resume-education .resume-edu-wrapper .resume-edu-1 {
+  padding-right: 4rem;
 }
 #Resume .resume-grid-wrapper .div4 .div4-scroll-container .resume-education .resume-edu-wrapper .resume-dates {
   font-size: 0.8rem;
@@ -1357,7 +1525,16 @@ main {
 }
 #Resume .resume-grid-wrapper .div4 .div4-scroll-container .resume-skills .resume-skills-wrapper {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-start;
+}
+#Resume .resume-grid-wrapper .div4 .div4-scroll-container .resume-skills .resume-skills-wrapper h4 {
+  color: var(--olive);
+}
+#Resume .resume-grid-wrapper .div4 .div4-scroll-container .resume-skills .resume-skills-wrapper .skills-pl {
+  padding-right: 3rem;
+}
+#Resume .resume-grid-wrapper .div4 .div4-scroll-container .resume-skills .resume-skills-wrapper .skills-lb-fw {
+  padding-right: 3rem;
 }
 #Resume .resume-grid-wrapper .div4 .div4-scroll-container .resume-interests ul {
   list-style: none;
