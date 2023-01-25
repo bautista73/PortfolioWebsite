@@ -32,11 +32,11 @@ function contactTab(){
   document.getElementById('contactOpen').click();
 }
 
-document.getElementById("defaultOpen").click(); // change this
+ document.getElementById("defaultOpen").click();// change this
 
+ // hamburger JS
 var menu = document.querySelector('.hamburger');
 
-// hamburger JS
 function toggleMenu (event) {
   this.classList.toggle('is-active');
   document.querySelector( ".menuppal" ).classList.toggle("is_active");
@@ -44,3 +44,7 @@ function toggleMenu (event) {
 }
 
 menu.addEventListener('click', toggleMenu, false);
+
+function closeNav() {
+    menu.click();
+}

@@ -17,7 +17,7 @@
             <div class="nav-logo">
                 <img src="/WebsiteDraft-Three/resources/Images/b2c.png" onclick="openTab(event, 'Home')"/>
             </div>
-            <div class="nav-items">
+            <div id="nav-items-check" class="nav-items">
                 <ul class="tab">
                     <li><button id="defaultOpen" class="tablinks" onclick="openTab(event, 'Home')">Home</button></li>
                     <li><button id="worksOpen" class="tablinks" onclick="openTab(event, 'Works')">Works</button></li>
@@ -37,8 +37,8 @@
             </div>
             <div class="menuppal">
                 <ul class="tab">
-                    <li><button id="defaultOpen" class="tablinks" onclick="openTab(event, 'Home')">Home</button></li>
-                    <li><button id="worksOpen" class="tablinks" onclick="openTab(event, 'Works')">Works</button></li>
+                    <li><button id="default_Open" class="tablinks" onclick="openTab(event, 'Home'); closeNav();">Home</button></li>
+                    <li><button id="worksOpen" class="tablinks" onclick="openTab(event, 'Works'); closeNav();">Works</button></li>
                     <li><button id="aboutOpen" class="tablinks" onclick="openTab(event, 'About')">About</button></li>
                     <li><button id="resumeOpen" class="tablinks" onclick="openTab(event, 'Resume')">Resume</button></li>
                 </ul>
@@ -440,7 +440,7 @@
             </div>
         </section>
     </main>
-    <footer id="footer">
+    <footer id="Footer">
         <div class="footer-wrapper">
             <div class="footer-socials">
                 <ul>

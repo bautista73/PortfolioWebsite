@@ -50,6 +50,12 @@ body {
   }
 }
 @media only screen and (max-width: 800px) {
+  body h2 {
+    font-size: 2.1rem;
+  }
+  body h4 {
+    font-size: 1.3rem;
+  }
   body #header {
     position: -webkit-sticky;
     position: sticky;
@@ -69,21 +75,27 @@ body {
     display: flex;
     justify-content: flex-start;
   }
-  body #header #navigation :not(:first-child) {
+  body #header #navigation #nav-items-check {
+    display: none;
+  }
+  body #header #navigation .nav-cv-button {
     display: none;
   }
   body #Home {
     display: grid;
     grid-template-columns: none;
     grid-template-rows: repeat(8, 1fr);
-    height: 150rem;
-    width: 70rem;
+    height: 130rem;
+    width: 50rem;
   }
   body #Home .div1 {
     grid-area: 1/1/2/2;
   }
   body #Home .div2 {
     grid-area: 2/1/3/2;
+  }
+  body #Home .div2 .div2-container .fa-certificate {
+    font-size: 3rem;
   }
   body #Home .div3 {
     grid-area: 3/1/4/2;
@@ -94,14 +106,43 @@ body {
   body #Home .div5 {
     grid-area: 5/1/6/2;
   }
+  body #Home .div5 .div5-container .div5-button-container .fa-github {
+    font-size: 10rem;
+  }
   body #Home .div6 {
     grid-area: 6/1/7/2;
   }
   body #Home .div7 {
     grid-area: 7/1/8/2;
   }
+  body #Home .div7 .div7-container .fa-paper-plane {
+    font-size: 3rem;
+  }
   body #Home .div8 {
     grid-area: 8/1/9/2;
+  }
+  body #Home .div8 .div8-container .div8-bottom-container .icons-text .h-i-group i {
+    font-size: 3rem;
+  }
+  body #Footer {
+    padding: 3rem;
+    width: 100%;
+  }
+  body #Footer .footer-wrapper {
+    width: 100%;
+  }
+  body #Footer .footer-wrapper .footer-socials {
+    width: 100%;
+  }
+  body #Footer .footer-wrapper .footer-socials ul {
+    width: 100%;
+  }
+  body #Footer .footer-wrapper .footer-socials ul li {
+    font-size: 2.3rem;
+  }
+  body #Footer .footer-wrapper .footer-info {
+    font-size: 1.1rem;
+    padding: 1rem;
   }
 }
 main {
@@ -1547,52 +1588,52 @@ main {
   padding-top: 1rem;
 }
 
-#footer {
+#Footer {
   width: 100%;
   height: 15%;
   padding-top: 2rem;
   line-height: 1.6rem;
   flex-basis: auto;
 }
-#footer .footer-wrapper {
+#Footer .footer-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
 }
-#footer .footer-wrapper .footer-socials {
+#Footer .footer-wrapper .footer-socials {
   font-size: 1.3rem;
-  width: 20%;
+  width: 15rem;
 }
-#footer .footer-wrapper .footer-socials ul {
+#Footer .footer-wrapper .footer-socials ul {
   display: flex;
   justify-content: space-around;
 }
-#footer .footer-wrapper .footer-socials ul li {
+#Footer .footer-wrapper .footer-socials ul li {
   list-style: none;
 }
-#footer .footer-wrapper .footer-socials ul li a {
+#Footer .footer-wrapper .footer-socials ul li a {
   color: var(--gray);
 }
-#footer .footer-wrapper .footer-socials ul li:hover:nth-child(1) a {
+#Footer .footer-wrapper .footer-socials ul li:hover:nth-child(1) a {
   color: #0072b1;
 }
-#footer .footer-wrapper .footer-socials ul li:hover:nth-child(2) a {
+#Footer .footer-wrapper .footer-socials ul li:hover:nth-child(2) a {
   color: black;
 }
-#footer .footer-wrapper .footer-socials ul li:hover:nth-child(3) a {
+#Footer .footer-wrapper .footer-socials ul li:hover:nth-child(3) a {
   color: #1DA1F2;
 }
-#footer .footer-wrapper .footer-socials ul li:hover:nth-child(4) a {
+#Footer .footer-wrapper .footer-socials ul li:hover:nth-child(4) a {
   color: rgb(10, 10, 10);
 }
-#footer .footer-wrapper .footer-socials ul li:hover:nth-child(5) a {
+#Footer .footer-wrapper .footer-socials ul li:hover:nth-child(5) a {
   color: #053eff;
 }
-#footer .footer-wrapper .footer-socials ul li:hover:nth-child(6) a {
+#Footer .footer-wrapper .footer-socials ul li:hover:nth-child(6) a {
   color: #ea4c89;
 }
-#footer .footer-wrapper .footer-info {
+#Footer .footer-wrapper .footer-info {
   height: 40%;
   display: flex;
   flex-direction: column;
@@ -1602,9 +1643,9 @@ main {
   font-size: 0.85rem;
   font-weight: 500;
 }
-#footer .footer-wrapper .footer-info .b-brandon, #footer .footer-wrapper .footer-info .b2 {
+#Footer .footer-wrapper .footer-info .b-brandon, #Footer .footer-wrapper .footer-info .b2 {
   color: var(--gray);
 }
-#footer .footer-wrapper .footer-info .fa-cat {
+#Footer .footer-wrapper .footer-info .fa-cat {
   font-size: 0.68rem;
 }/*# sourceMappingURL=index.css.map */

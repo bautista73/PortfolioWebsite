@@ -90,6 +90,9 @@
   text-decoration: none;
   color: black;
 }
+.menuppal ul li button.active {
+  color: var(--olive);
+}
 .menuppal .menuppal-button {
   margin: 1rem auto auto auto;
   text-align: center;
