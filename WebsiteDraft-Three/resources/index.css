@@ -1,5 +1,6 @@
 @import url(/WebsiteDraft-Three/resources/additionalstyles/divfloat.css);
 @import url(/WebsiteDraft-Three/resources/additionalstyles/animatedentrance.css);
+@import url(/WebsiteDraft-Three/resources/additionalstyles/hamburger.css);
 :root {
   --dark: rgb(29, 29, 29);
   --dark-2: rgb(35,35,35);
@@ -49,9 +50,6 @@ body {
   }
 }
 @media only screen and (max-width: 800px) {
-  body #header #navigation {
-    overflow: hidden;
-  }
   body #Home {
     display: grid;
     grid-template-columns: none;
@@ -163,6 +161,88 @@ main {
 #header #navigation .nav-cv-button .cv-button:hover {
   background: var(--olive);
   color: var(--pearl-blush);
+}
+#header #navigation #hamburger {
+  position: absolute;
+  right: 10px;
+  top: 14px;
+  z-index: 999;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  visibility: hidden;
+  opacity: 0;
+}
+#header #navigation #hamburger .line {
+  height: 7px;
+  background: #444;
+  margin: 5px auto;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+#header #navigation #hamburger.active #one {
+  transform: rotate(45deg) translateX(6px) translateY(6px);
+}
+#header #navigation #hamburger.active #two {
+  opacity: 0;
+}
+#header #navigation #hamburger.active #three {
+  transform: rotate(-45deg) translateX(10px) translateY(-12px);
+}
+@media (max-width: 800px) {
+  #header #navigation #hamburger {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+#header #navigation #hamburger .mobile-menu {
+  z-index: 1;
+  position: absolute;
+  top: 0px;
+  background: #ddd;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease-out;
+  display: table;
+}
+#header #navigation #hamburger .mobile-menu .mobile-menu__items {
+  height: 50px;
+  display: table-cell;
+  vertical-align: middle;
+}
+#header #navigation #hamburger .mobile-menu .mobile-menu__items li {
+  display: block;
+  text-align: center;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 35px;
+  min-height: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+#header #navigation #hamburger .mobile-menu .mobile-menu__items li:hover {
+  color: #fff;
+  background: #212121;
+}
+#header #navigation #hamburger .mobile-menu .mobile-menu__items li:hover a {
+  transition: all 0.3s ease-out;
+  color: #fff;
+}
+#header #navigation #hamburger .mobile-menu .mobile-menu__items a {
+  color: #212121;
+}
+#header #navigation #hamburger .mobile-menu .mobile-menu__items.active {
+  visibility: visible;
+  opacity: 0.99;
+}
+@media (max-width: 800px) {
+  #header #navigation #hamburger .mobile-menu .mobile-menu__items {
+    visibility: hidden !important;
+  }
 }
 
 #Home {
